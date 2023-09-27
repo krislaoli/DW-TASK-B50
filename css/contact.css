@@ -1,0 +1,84 @@
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contact {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px 90px;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    box-shadow: 0 0 20px yellow;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+  
+    background-size: cover;
+}
+
+.contact .title {
+    text-align: center;
+    font-family: Kelly Slab;
+    color: yellow;
+    letter-spacing: 2px; 
+}
+
+.input-container {
+    margin-bottom: 10px;
+    font-family: Viga;
+}
+
+.input-container .label {
+    margin-bottom: 8px;
+    font-size: 18px;
+    display: block;
+    color: bisque;
+}
+
+.input {
+    font-family: Jockey One;
+    letter-spacing: 1px;
+}
+
+.input-container .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;         
+    font-size: 16px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.input-mesage {
+    resize: none;
+}
+
+.input-container .input:focus {
+    outline: none;
+    border-color: white;
+}
+
+/* button submit */
+.submit {
+    display: flex; justify-content: end;
+}
+
+.submit-button {
+    font-family: Viga;
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: bisque;
+    transform: translateY(-5px);
+}
+/* button submit end */

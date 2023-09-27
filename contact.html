@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
+    </style>
+    <title>Contact Me</title>
+  </head>
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+
+  <body
+    style="
+      background-image: url(https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    "
+  >
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li class="img-logo">
+            <a href="#">
+              <img class="logo-navbar" src="image/navbar-logo.png" alt="logo" />
+            </a>
+          </li>
+          <li>
+            <a class="link-nav" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="link-nav" href="#">My Project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a class="contact-nav" href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <section class="contact" style="background-image: url(https://i.pinimg.com/originals/da/a1/19/daa119e2b37fd0af371641edf109da79.jpg)">
+      <h2 class="title">GET IN TOUCH</h2>
+      <form>
+        <div class="input-container">
+          <label class="label" for="input-name">Name</label>
+          <input
+            class="input"
+            placeholder="Input Name"
+            type="text"
+            id="input-name"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <label class="label" for="input-email">Email</label>
+          <input
+            class="input"
+            placeholder="Input Email"
+            type="email"
+            id="input-email"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <label class="label" for="input-phone">Phone Number</label>
+          <input
+            class="input"
+            placeholder="Input Phone Number"
+            type="number"
+            id="input-phone"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <label class="label" for="input-subject">Subject</label>
+          <select class="input" id="input-subject" required>
+            <option value="" hidden>Select</option>
+            <option>Frontend</option>
+            <option>Backend</option>
+            <option>Fullstack</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label class="label" for="message">Your Message</label>
+          <textarea
+            class="input input-mesage"
+            name=""
+            id="message"
+            cols="30"
+            rows="5"
+          ></textarea>
+        </div>
+
+        <!-- button submit -->
+        <div class="submit">
+          <label for="input-submit"></label>
+          <button class="submit-button" id="input-submit">Submit</button>
+        </div>
+        <!-- button submit end -->
+      </form>
+    </section>
+  </body>
+</html>

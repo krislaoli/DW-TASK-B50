@@ -89,13 +89,14 @@ nav ul li a {
 
 .nav-right a {
     background-color: bisque;
-    padding: 6px 18px;
+    padding: 2px 15px;
     color: black;
     border-radius: 10px;
     text-decoration: none;
     font-family: Jockey One;
     font-weight: bold;
     letter-spacing: 1px;
+    font-size: 20px;
 }
 
 .nav-right a:hover {

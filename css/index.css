@@ -1,15 +1,51 @@
-@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Tourney:wght@500&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+
 
 body {
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Londrina Solid';
+    letter-spacing: 2px;
 }
 
+/* teks berjalan */
+.goteks {
+    word-spacing: 5px;
+    font-size: 20px;
+    color: yellow;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+
+}
+
+.marquee {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+/* teks berjalan end */
 
 .container {
     border-radius: 10px;
@@ -54,16 +90,16 @@ body {
     font-size: 15px;
     background-color: bisque;
     width: 80px;
-    padding: 5px 10px;
+    padding: 2px 15px;
     border-radius: 15px;
     border: 20px red;
     transition: transform 0.3s ease;
+    font-size: 18px;
 }
 
 .container-contact:active {
     transform: translateY(5px);
 }
-
 /* button contact end */
 
 .container-cv {
@@ -73,7 +109,7 @@ body {
 
 .container-cv .download {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 18px;
     color: bisque;
     margin: 15px;
 }
@@ -134,8 +170,10 @@ body {
 }
 
 .card-title {
-    font-family: Oleo Script;
+    font-family: Yatra One;
     font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 /* card profile end */

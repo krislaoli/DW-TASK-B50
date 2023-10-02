@@ -1,3 +1,4 @@
+/* style font family */
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
@@ -5,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
-
+/* style font family end */
 
 body {
     background-size: cover;

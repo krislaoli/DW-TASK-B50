@@ -1,0 +1,106 @@
+/* font family style */
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+/* font family style end */
+
+body {
+    margin: 0;
+}
+
+nav {
+    background: linear-gradient(1000deg, black, bisque);
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    border-bottom: 3px solid black;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li {
+    font-family: Jockey One;
+    font-weight: bold;
+    margin-right: 25px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+nav ul li a {
+    position: relative;
+}
+
+/* Membuat garis animasi */
+.link-nav::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: red; 
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; /* Animasi lebar garis */
+}
+
+/* Mengatur animasi saat hover */
+.link-nav:hover::before {
+    width: 100%;
+}
+
+.logo-navbar {
+    max-width: 200px;
+    width: 100px;
+    margin-left: 45px;
+    margin-top: 4px;
+    align-items: center;
+}
+
+/* teks home - blog */
+.link-nav {
+    color: black;
+    text-decoration: none;
+}
+
+.link-nav:hover {
+    color: red;
+}
+
+.link-nav:active {
+    font-weight: bold;
+}
+
+/* teks home - blog end */
+
+.nav-left {
+    flex: 50%;
+}
+
+.nav-right {
+    flex: 50%;
+    text-align: end;
+    margin-right: 25px;
+}
+
+.nav-right a {
+    background-color: bisque;
+    padding: 2px 15px;
+    color: black;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: Jockey One;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.nav-right a:hover {
+    transition: transform 0.3s ease;
+    background-color: orangered;
+    transform: translateY(-5px);
+}

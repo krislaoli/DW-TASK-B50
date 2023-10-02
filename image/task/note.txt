@@ -1,0 +1,40 @@
+Day 4
+- what is non primitive type data ?
+- what is object ?
+- what is array ?
+- what is array of object ?
+
+value = nilai
+
+const 
+
+
+<form id="contactForm">
+        <div class="input-container">
+          <label class="label" for="project-form">Project name</label>
+          <input type="text" id="project-form" />
+        </div>
+        <div class="input-date">
+          <div class="input-date-form">
+            <span>
+              <label for="input-start-date">Start Date</label>
+              <input id="input-start-date" type="date">
+            </span>
+            <span>
+              <label for="input-end-date">End Date</label>
+              <input id="input-end-date" type="date">
+            </span>
+          </div>
+        </div>
+        <div>
+          <label for="input-blog-content">Description</label>
+          <textarea name="#" id="input-blog-content" cols="30" rows="10"></textarea>
+        </div>
+        <div></div>
+      </form>
+
+
+
+
+
+      https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D&w=1000&q=80

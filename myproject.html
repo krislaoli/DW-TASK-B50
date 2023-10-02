@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shorcut icon" type="icon" href="image/logo-website.PNG" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/myproject.css" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li class="img-logo">
+            <a href="index.html">
+              <img class="logo-navbar" src="image/navbar-logo.png" alt="logo" />
+            </a>
+          </li>
+          <li>
+            <a class="link-nav" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="link-nav" href="#">My Project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a class="contact-nav" href="contact.html">Contact</a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- My Project -->
+    <section class="my-project">
+      <div class="form-my-project">
+        <div class="form-blog">
+          <form onsubmit="addBlog(event)">
+            <h1 class="name-project">Add My Project</h1>
+            <div class="project-blog">
+              <label for="input-blog-title">Project Name</label>
+              <input id="input-blog-title" type="text" />
+            </div>
+
+            <!-- form date -->
+            <div class="input-date">
+              <div class="input-row">
+                <span>
+                  <label for="input-start-date">Start Date</label>
+                  <input id="input-start-date" type="date" />
+                </span>
+                <span>
+                  <label for="input-end-date">End Date</label>
+                  <input id="input-end-date" type="date" />
+                </span>
+              </div>
+            </div>
+            <!-- form date end -->
+
+            <!-- form description -->
+            <div>
+              <label for="input-content-blog">Description</label>
+              <textarea id="input-content-blog" cols="30" rows="10"></textarea>
+            </div>
+            <!-- form description end -->
+
+            <!-- form technologies -->
+            <div>
+              <label>Technologies</label>
+              <div class="check-box-Technologies">
+                <!-- icon check box -->
+                <div class="coloum-check-box">
+                  <div class="check-box-programer">
+                    <input type="checkbox" id="check-nodejs" />
+                    <span>
+                      <label class="spacing-text-icon">
+                        <i class="text-icon fa-brands fa-node-js fa-lg"></i>Node
+                        Js
+                      </label>
+                    </span>
+                  </div>
+                  <div class="check-box-programer">
+                    <input type="checkbox" id="check-javascript" />
+                    <label>
+                      <i class="text-icon fa-brands fa-js fa-lg"></i>Javascript
+                    </label>
+                  </div>
+                </div>
+
+                <div class="coloum-check-box">
+                  <div class="check-box-programer">
+                    <input type="checkbox" id="check-reactjs" />
+                    <label>
+                      <i class="text-icon fa-brands fa-react fa-lg"></i>React Js
+                    </label>
+                  </div>
+                  <div class="check-box-programer">
+                    <input type="checkbox" id="check-vuejs" />
+                    <label>
+                      <i class="text-icon fa-brands fa-vuejs fa-lg"></i> Vue Js
+                    </label>
+                  </div>
+                </div>
+                <!-- icon check box end -->
+              </div>
+            </div>
+            <!-- form technologies end -->
+
+            <!-- upload image -->
+            <div>
+              <label for="">Upload Image</label>
+              <div class="input-blog-image-group">
+                <label class="image-group" for="input-blog-image">
+                  <p>Attach File</p>
+                  <img src="image/cliping.png" alt="" />
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <!-- upload image end -->
+
+            <!-- submit blog -->
+            <div class="submit-blog">
+              <button class="submit-blog-style">Submit</button>
+            </div>
+            <!-- submit blog end -->
+          </form>
+        </div>
+        <!-- <hr class="line"> -->
+      </div>
+    </section>
+    <!-- My Project end -->
+
+    <!-- ===================================================================================================================================================================================================================== -->
+    <!-- prject card add -->
+    <section style="background-color: bisque">
+      <div>
+        <h2 class="name-project-card">My Project</h2>
+        <div class="form-project-card-add" id="form-project-card-add">
+          <div class="form-project-card">
+            <div class="form-project-image">
+              <img id="image-add" class="image-add" src="image/a.gif" />
+            </div>
+            <div class="title-add-project">
+              <h3>
+                <a href="blog-detail.html" style="text-decoration: none; color: red;" 
+                  >ZUMA Human
+                </a>
+              </h3>
+            </div>
+            <div class="duration-project">
+              <p>Duration : 3 Bulan</p>
+            </div>
+            <div class="description-project">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium dolores ullam minima reiciendis adipisci quisquam
+              </p>
+            </div>
+            <div class="technologies-project">
+              <div class="technologies-project-card">
+                <i class="fa-brands fa-node-js fa-xl"></i>
+                <i class="fa-brands fa-js fa-xl"></i>
+                <i class="fa-brands fa-react fa-xl"></i>
+                <i class="fa-brands fa-vuejs fa-xl"></i>
+              </div>
+            </div>
+            <div class="button-add-project">
+              <button type="button" class="edit-button">Edit</button>
+              <button type="button" class="delete-button">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/myproject.js"></script>
+  </body>
+</html>

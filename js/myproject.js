@@ -121,7 +121,151 @@ function renderBlog() {
 function dummyCard() {
   document.getElementById("form-project-card-add").innerHTML = "";
 
-  for (let i = 0; i < 9; i++) {
+  // card 1
+  for (let i = 0; i < 1; i++) {
+    document.getElementById("form-project-card-add").innerHTML += `
+        <div class="form-project-card">
+        <div class="form-project-image">
+            <img id="image-add" class="image-add" src="image/a.gif"/>
+        </div>
+        <div class="title-add-project">
+        <h3>
+          <a href="blog-detail.html" 
+            >ZUMA Human
+          </a>
+        </h3>
+      </div>
+        <div class="duration-project">
+            <p>Duration : 3 Month</p>
+        </div>
+        <div class="description-project">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
+        </div>
+        <div class="technologies-project">
+            <div class="technologies-project-card">
+                <i class="fa-brands fa-node-js fa-xl"></i>
+                <i class="fa-brands fa-js fa-xl"></i>
+                <i class="fa-brands fa-react fa-xl"></i>
+                <i class="fa-brands fa-vuejs fa-xl"></i>
+            </div>
+        </div>
+        <div class="button-add-project">
+            <button type="button" class="edit-button" id="edit-button">Edit</button>
+            <button type="button" class="delete-button" id="delete-button">Delete</button>
+        </div>
+         </div>
+        `;
+  }
+
+  // card 2
+  for (let i = 0; i < 1; i++) {
+    document.getElementById("form-project-card-add").innerHTML += `
+        <div class="form-project-card">
+        <div class="form-project-image">
+            <img id="image-add" class="image-add" src="image/b.gif"/>
+        </div>
+        <div class="title-add-project">
+        <h3>
+          <a href="blog-detail.html" 
+            >ZUMA Human
+          </a>
+        </h3>
+      </div>
+        <div class="duration-project">
+            <p>Duration : 3 Month</p>
+        </div>
+        <div class="description-project">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
+        </div>
+        <div class="technologies-project">
+            <div class="technologies-project-card">
+                <i class="fa-brands fa-node-js fa-xl"></i>
+                <i class="fa-brands fa-js fa-xl"></i>
+            </div>
+        </div>
+        <div class="button-add-project">
+            <button type="button" class="edit-button" id="edit-button">Edit</button>
+            <button type="button" class="delete-button" id="delete-button">Delete</button>
+        </div>
+         </div>
+        `;
+  }
+
+  // card 3
+  for (let i = 0; i < 1; i++) {
+    document.getElementById("form-project-card-add").innerHTML += `
+        <div class="form-project-card">
+        <div class="form-project-image">
+            <img id="image-add" class="image-add" src="image/c.gif"/>
+        </div>
+        <div class="title-add-project">
+        <h3>
+          <a href="blog-detail.html" 
+            >ZUMA Human
+          </a>
+        </h3>
+      </div>
+        <div class="duration-project">
+            <p>Duration : 3 Month</p>
+        </div>
+        <div class="description-project">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
+        </div>
+        <div class="technologies-project">
+            <div class="technologies-project-card">
+                <i class="fa-brands fa-node-js fa-xl"></i>
+                <i class="fa-brands fa-react fa-xl"></i>
+                <i class="fa-brands fa-vuejs fa-xl"></i>
+            </div>
+        </div>
+        <div class="button-add-project">
+            <button type="button" class="edit-button" id="edit-button">Edit</button>
+            <button type="button" class="delete-button" id="delete-button">Delete</button>
+        </div>
+         </div>
+        `;
+  }
+
+  // card 4
+  for (let i = 0; i < 1; i++) {
+    document.getElementById("form-project-card-add").innerHTML += `
+        <div class="form-project-card">
+        <div class="form-project-image">
+            <img id="image-add" class="image-add" src="image/d.gif"/>
+        </div>
+        <div class="title-add-project">
+        <h3>
+          <a href="blog-detail.html" 
+            >ZUMA Human
+          </a>
+        </h3>
+      </div>
+        <div class="duration-project">
+            <p>Duration : 3 Month</p>
+        </div>
+        <div class="description-project">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
+        </div>
+        <div class="technologies-project">
+            <div class="technologies-project-card">
+                <i class="fa-brands fa-js fa-xl"></i>
+                <i class="fa-brands fa-vuejs fa-xl"></i>
+            </div>
+        </div>
+        <div class="button-add-project">
+            <button type="button" class="edit-button" id="edit-button">Edit</button>
+            <button type="button" class="delete-button" id="delete-button">Delete</button>
+        </div>
+         </div>
+        `;
+  }
+
+  // card 5
+  for (let i = 0; i < 1; i++) {
     document.getElementById("form-project-card-add").innerHTML += `
         <div class="form-project-card">
         <div class="form-project-image">
@@ -135,7 +279,7 @@ function dummyCard() {
         </h3>
       </div>
         <div class="duration-project">
-            <p>Duration : 3 Bulan</p>
+            <p>Duration : 3 Month</p>
         </div>
         <div class="description-project">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -143,7 +287,40 @@ function dummyCard() {
         </div>
         <div class="technologies-project">
             <div class="technologies-project-card">
-                <i class="fa-brands fa-node-js fa-xl"></i>
+                <i class="fa-brands fa-react fa-xl"></i>
+            </div>
+        </div>
+        <div class="button-add-project">
+            <button type="button" class="edit-button" id="edit-button">Edit</button>
+            <button type="button" class="delete-button" id="delete-button">Delete</button>
+        </div>
+         </div>
+        `;
+  }
+
+  // card 6
+  for (let i = 0; i < 1; i++) {
+    document.getElementById("form-project-card-add").innerHTML += `
+        <div class="form-project-card">
+        <div class="form-project-image">
+            <img id="image-add" class="image-add" src="image/g.gif"/>
+        </div>
+        <div class="title-add-project">
+        <h3>
+          <a href="blog-detail.html" 
+            >ZUMA Human
+          </a>
+        </h3>
+      </div>
+        <div class="duration-project">
+            <p>Duration : 3 Month</p>
+        </div>
+        <div class="description-project">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
+        </div>
+        <div class="technologies-project">
+            <div class="technologies-project-card">
                 <i class="fa-brands fa-js fa-xl"></i>
                 <i class="fa-brands fa-react fa-xl"></i>
                 <i class="fa-brands fa-vuejs fa-xl"></i>

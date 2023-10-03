@@ -6,10 +6,10 @@
 /* style font end */
 
 body {
-    background-image: url('https://cutewallpaper.org/23/dark-wallpaper-hd-1080p/1620815696.jpg');
-    background-size: cover;
-    /* background-color: bisque; */
+    background-image: url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .form-my-project {
@@ -60,8 +60,8 @@ select {
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 20px;
-    background-color: aqua;
-    border: 1px solid red;
+    background-color: bisque;
+    border: 1px solid black;
     border-radius: 6px;
 }
 
@@ -111,12 +111,12 @@ select {
 .form-blog form .input-blog-image-group {
     width: 100%;
     font-size: 20px;
-    background-color: aqua;
+    background-color: bisque;
     font-weight: 400;
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 20px;
-    border: 1px solid red;
+    border: 1px solid black;
     border-radius: 8px;
     cursor: pointer;
     color: black;
@@ -172,6 +172,9 @@ select {
 .name-project-card {
     text-align: center;
     font-size: 30px;
+    position: relative;
+    top: 15px;
+    font-family: Kelly Slab;
 }
 
 .form-project-card-add {
@@ -181,6 +184,7 @@ select {
 }
 
 .form-project-card {
+    background-color: black;
     margin: 20px 20px;
     padding: 25px;
     width: 25%;
@@ -203,6 +207,23 @@ select {
     margin-bottom: 10px;
 }
 
+.card-duration-icon  {
+    color: bisque;
+}
+
+.duration-project {
+    color: bisque;
+}
+
+.title-add-project a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.description-project p {
+    color: bisque;
+}
+
 .description-project .description-project-coment {
     text-align: justify;
     white-space: nowrap;
@@ -214,6 +235,7 @@ select {
 
 .technologies-project {
     margin: 40px 0px;
+    color: bisque;
 }
 
 .technologies-project-card {
@@ -242,10 +264,12 @@ select {
     margin-top: 20px;
     font-size: 15px;
     cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 5px;
 }
 
 button {
-    background-color: red;
+    background-color: y;
     color: black;
     padding: 6px 25px;
     border: none;
@@ -257,3 +281,11 @@ button {
     font-weight: bold;
 }
 
+ .edit-button {
+    background-color: yellow;
+}
+
+.delete-button {
+    background-color: red;
+    color: bisque;
+}

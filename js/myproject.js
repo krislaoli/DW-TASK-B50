@@ -94,7 +94,7 @@ function renderBlog() {
                     <img id="image-add" class="image-add" src="${dataBlog[index].image}"/>
                 </div>
                 <div class="title-add-project">
-                    <h3>${dataBlog[index].title}</h3>
+                    <h3><a href="blog-detail.html">${dataBlog[index].title}</a></h3>
                 </div>
                 <div class="duration-project">
                     <p>Duration : ${dataBlog[index].rentangProject}</p>
@@ -111,8 +111,8 @@ function renderBlog() {
                     </div>
                 </div>
                 <div class="button-add-project">
-                    <button type="button" id="edit-button">Edit</button>
-                    <button type="button" id="delete-button">Delete</button>
+                    <button type="button" class="edit-button" id="edit-button">Edit</button>
+                    <button type="button" class="delete-button" id="delete-button">Delete</button>
                 </div>
             </div>`;
   }
@@ -121,15 +121,19 @@ function renderBlog() {
 function dummyCard() {
   document.getElementById("form-project-card-add").innerHTML = "";
 
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 9; i++) {
     document.getElementById("form-project-card-add").innerHTML += `
         <div class="form-project-card">
         <div class="form-project-image">
             <img id="image-add" class="image-add" src="image/e.gif"/>
         </div>
         <div class="title-add-project">
-            <h3><a href="blog-detail.html" style="text-decoration: none; color: black;>ZUMA Human</a></h3>
-        </div>
+        <h3>
+          <a href="blog-detail.html" 
+            >ZUMA Human
+          </a>
+        </h3>
+      </div>
         <div class="duration-project">
             <p>Duration : 3 Bulan</p>
         </div>
@@ -146,8 +150,8 @@ function dummyCard() {
             </div>
         </div>
         <div class="button-add-project">
-            <button type="button" id="edit-button">Edit</button>
-            <button type="button" id="delete-button">Delete</button>
+            <button type="button" class="edit-button" id="edit-button">Edit</button>
+            <button type="button" class="delete-button" id="delete-button">Delete</button>
         </div>
          </div>
         `;

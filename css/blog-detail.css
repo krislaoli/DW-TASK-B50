@@ -4,12 +4,14 @@
 /* style font family end */
 
 .blog-detail {
+  background-color: black;
   display: flex;
   justify-content: center;
   font-family: kelly slab;
 }
 
 .blog-detail-container {
+  color: bisque;
   width: 80%;
   margin: 40px 0;
 }
@@ -47,18 +49,14 @@
   margin-left: 40px;
 }
 
-.icon-1 {
-  display: inline;
-  padding: 5px;
-}
-
-.icon-2 {
-  display: inline;
-  padding: 5px;
-}
-
 .info-content-activity a {
   margin-right: 10px;
+}
+
+.technologies-project td {
+  padding: 5px;
+  width: 170px;
+  letter-spacing: 2px;
 }
 
 .info-content-paragraph p {
@@ -155,37 +153,4 @@ button {
 
 h1 {
   text-align: center;
-}
-
-
-.check-box-Technologies {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 5px;
-  align-items: center;
-}
-
-.coloum-check-box {
-  margin-top: 0px;
-}
-
-.check-box-programer {
-  display: flex;
-  gap: 10px;
-}
-
-.check-box-programer input {
-  width: fit-content;
-  padding: 0px;
-  margin-top: 0px;
-  border-radius: 0px;
-  border-radius: 1px solid orange;
-  size: none;
-  box-shadow: 0px 0px 0px wheat;
-}
-
-
-.form-blog form .check-box-programer .text-icon {
-  margin-right: 5px;
 }

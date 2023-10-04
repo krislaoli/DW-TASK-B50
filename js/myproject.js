@@ -93,7 +93,7 @@ function renderBlog() {
                     }"/>
                 </div>
                 <div class="title-add-project">
-                    <h3  style="overflow: auto; letter-spacing: 1px;"        class="scroll-name"
+                    <h3  style="overflow: auto; letter-spacing: 1px;" class="scroll-name"
                     "><a  href="blog-detail.html">${
                       dataBlog[index].title
                     }</a></h3>
@@ -169,184 +169,187 @@ function dummyCard() {
   }
 
   // card 2
-  for (let i = 0; i < 1; i++) {
-    document.getElementById("form-project-card-add").innerHTML += `
-        <div class="form-project-card">
-        <div class="form-project-image">
-            <img id="image-add" class="image-add" src="image/b.gif"/>
-        </div>
-        <div class="title-add-project">
-        <h3>
-          <a href="blog-detail.html" 
-            >Suluyuianong 
-          </a>
-        </h3>
-      </div>
-        <div class="duration-project">
-            <p>Duration : 3 Month</p>
-        </div>
-        <div class="description-project">
-            <p class="scrolltable">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
-        </div>
-        <div class="technologies-project">
-            <div class="technologies-project-card">
-                <i class="fa-brands fa-node-js fa-xl"></i>
-                <i class="fa-brands fa-js fa-xl"></i>
-            </div>
-        </div>
-        <div class="button-add-project">
-            <button type="button" class="edit-button" id="edit-button">Edit</button>
-            <button type="button" class="delete-button" id="delete-button">Delete</button>
-        </div>
-         </div>
-        `;
-  }
+  // for (let i = 0; i < 1; i++) {
+  //   document.getElementById("form-project-card-add").innerHTML += `
+  //       <div class="form-project-card">
+  //       <div class="form-project-image">
+  //           <img id="image-add" class="image-add" src="image/b.gif"/>
+  //       </div>
+  //       <div class="title-add-project">
+  //       <h3>
+  //         <a href="blog-detail.html" 
+  //           >Suluyuianong 
+  //         </a>
+  //       </h3>
+  //     </div>
+  //       <div class="duration-project">
+  //           <p>Duration : 3 Month</p>
+  //       </div>
+  //       <div class="description-project">
+  //           <p class="scrolltable">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+  //           Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
+  //       </div>
+  //       <div class="technologies-project">
+  //           <div class="technologies-project-card">
+  //               <i class="fa-brands fa-node-js fa-xl"></i>
+  //               <i class="fa-brands fa-js fa-xl"></i>
+  //           </div>
+  //       </div>
+  //       <div class="button-add-project">
+  //           <button type="button" class="edit-button" id="edit-button">Edit</button>
+  //           <button type="button" class="delete-button" id="delete-button">Delete</button>
+  //       </div>
+  //        </div>
+  //       `;
+  // }
 
   // card 3
-  for (let i = 0; i < 1; i++) {
-    document.getElementById("form-project-card-add").innerHTML += `
-        <div class="form-project-card">
-        <div class="form-project-image">
-            <img id="image-add" class="image-add" src="image/c.gif"/>
-        </div>
-        <div class="title-add-project">
-        <h3>
-          <a href="blog-detail.html" 
-            >sus mandarux 
-          </a>
-        </h3>
-      </div>
-        <div class="duration-project">
-            <p>Duration : 3 Month</p>
-        </div>
-        <div class="description-project">
-            <p class="scrolltable">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
-        </div>
-        <div class="technologies-project">
-            <div class="technologies-project-card">
-                <i class="fa-brands fa-node-js fa-xl"></i>
-                <i class="fa-brands fa-react fa-xl"></i>
-                <i class="fa-brands fa-vuejs fa-xl"></i>
-            </div>
-        </div>
-        <div class="button-add-project">
-            <button type="button" class="edit-button" id="edit-button">Edit</button>
-            <button type="button" class="delete-button" id="delete-button">Delete</button>
-        </div>
-         </div>
-        `;
-  }
+  // for (let i = 0; i < 1; i++) {
+  //   document.getElementById("form-project-card-add").innerHTML += `
+  //       <div class="form-project-card">
+  //       <div class="form-project-image">
+  //           <img id="image-add" class="image-add" src="image/c.gif"/>
+  //       </div>
+  //       <div class="title-add-project">
+  //       <h3>
+  //         <a href="blog-detail.html" 
+  //           >sus mandarux 
+  //         </a>
+  //       </h3>
+  //     </div>
+  //       <div class="duration-project">
+  //           <p>Duration : 3 Month</p>
+  //       </div>
+  //       <div class="description-project">
+  //           <p class="scrolltable">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+  //           Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
+  //       </div>
+  //       <div class="technologies-project">
+  //           <div class="technologies-project-card">
+  //               <i class="fa-brands fa-node-js fa-xl"></i>
+  //               <i class="fa-brands fa-react fa-xl"></i>
+  //               <i class="fa-brands fa-vuejs fa-xl"></i>
+  //           </div>
+  //       </div>
+  //       <div class="button-add-project">
+  //           <button type="button" class="edit-button" id="edit-button">Edit</button>
+  //           <button type="button" class="delete-button" id="delete-button">Delete</button>
+  //       </div>
+  //        </div>
+  //       `;
+  // }
 
   // card 4
-  for (let i = 0; i < 1; i++) {
-    document.getElementById("form-project-card-add").innerHTML += `
-        <div class="form-project-card">
-        <div class="form-project-image">
-            <img id="image-add" class="image-add" src="image/d.gif"/>
-        </div>
-        <div class="title-add-project">
-        <h3>
-          <a href="blog-detail.html" 
-            >Suluyuianong 
-          </a>
-        </h3>
-      </div>
-        <div class="duration-project">
-            <p>Duration : 3 Month</p>
-        </div>
-        <div class="description-project">
-            <p class="scrolltable">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
-        </div>
-        <div class="technologies-project">
-            <div class="technologies-project-card">
-                <i class="fa-brands fa-js fa-xl"></i>
-                <i class="fa-brands fa-vuejs fa-xl"></i>
-            </div>
-        </div>
-        <div class="button-add-project">
-            <button type="button" class="edit-button" id="edit-button">Edit</button>
-            <button type="button" class="delete-button" id="delete-button">Delete</button>
-        </div>
-         </div>
-        `;
-  }
+  // for (let i = 0; i < 1; i++) {
+  //   document.getElementById("form-project-card-add").innerHTML += `
+  //       <div class="form-project-card">
+  //       <div class="form-project-image">
+  //           <img id="image-add" class="image-add" src="image/d.gif"/>
+  //       </div>
+  //       <div class="title-add-project">
+  //       <h3>
+  //         <a href="blog-detail.html" 
+  //           >Suluyuianong 
+  //         </a>
+  //       </h3>
+  //     </div>
+  //       <div class="duration-project">
+  //           <p>Duration : 3 Month</p>
+  //       </div>
+  //       <div class="description-project">
+  //           <p class="scrolltable">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+  //           Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
+  //       </div>
+  //       <div class="technologies-project">
+  //           <div class="technologies-project-card">
+  //               <i class="fa-brands fa-js fa-xl"></i>
+  //               <i class="fa-brands fa-vuejs fa-xl"></i>
+  //           </div>
+  //       </div>
+  //       <div class="button-add-project">
+  //           <button type="button" class="edit-button" id="edit-button">Edit</button>
+  //           <button type="button" class="delete-button" id="delete-button">Delete</button>
+  //       </div>
+  //        </div>
+  //       `;
+  // }
 
   // card 5
-  for (let i = 0; i < 1; i++) {
-    document.getElementById("form-project-card-add").innerHTML += `
-        <div class="form-project-card">
-        <div class="form-project-image">
-            <img id="image-add" class="image-add" src="image/e.gif"/>
-        </div>
-        <div class="title-add-project">
-        <h3>
-          <a href="blog-detail.html" 
-            >Yosimurahings 
-          </a>
-        </h3>
-      </div>
-        <div class="duration-project">
-            <p>Duration : 3 Month</p>
-        </div>
-        <div class="description-project">
-            <p class="scrolltable">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
-        </div>
-        <div class="technologies-project">
-            <div class="technologies-project-card">
-                <i class="fa-brands fa-react fa-xl"></i>
-            </div>
-        </div>
-        <div class="button-add-project">
-            <button type="button" class="edit-button" id="edit-button">Edit</button>
-            <button type="button" class="delete-button" id="delete-button">Delete</button>
-        </div>
-         </div>
-        `;
-  }
+  // for (let i = 0; i < 1; i++) {
+  //   document.getElementById("form-project-card-add").innerHTML += `
+  //       <div class="form-project-card">
+  //       <div class="form-project-image">
+  //           <img id="image-add" class="image-add" src="image/e.gif"/>
+  //       </div>
+  //       <div class="title-add-project">
+  //       <h3>
+  //         <a href="blog-detail.html" 
+  //           >Yosimurahings 
+  //         </a>
+  //       </h3>
+  //     </div>
+  //       <div class="duration-project">
+  //           <p>Duration : 3 Month</p>
+  //       </div>
+  //       <div class="description-project">
+  //           <p class="scrolltable">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+  //           Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
+  //       </div>
+  //       <div class="technologies-project">
+  //           <div class="technologies-project-card">
+  //               <i class="fa-brands fa-react fa-xl"></i>
+  //           </div>
+  //       </div>
+  //       <div class="button-add-project">
+  //           <button type="button" class="edit-button" id="edit-button">Edit</button>
+  //           <button type="button" class="delete-button" id="delete-button">Delete</button>
+  //       </div>
+  //        </div>
+  //       `;
+  // }
 
   // card 6
-  for (let i = 0; i < 1; i++) {
-    document.getElementById("form-project-card-add").innerHTML += `
-        <div class="form-project-card">
-        <div class="form-project-image">
-            <img id="image-add" class="image-add" src="image/g.gif"/>
-        </div>
-        <div class="title-add-project">
-        <h3>
-          <a href="blog-detail.html" 
-            >Kombatgrin 
-          </a>
-        </h3>
-      </div>
-        <div class="duration-project">
-            <p>Duration : 3 Month</p>
-        </div>
-        <div class="description-project">
-            <p class="scrolltable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, impedit cupiditate. Possimus rerum, molestiae officia modi sapiente adipisci recusandae eius deleniti dolores provident qui, eaque excepturi facilis voluptates eum dolorum minus vitae quaerat consequuntur doloribus nostrum? Consequuntur, iure. Quia hic cumque magnam doloribus ipsam maxime delectus ullam culpa. Ipsam labore perspiciatis corporis? Exercitationem velit in eius numquam eaque! Esse, possimus!Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
-        </div>
-        <div class="technologies-project">
-            <div class="technologies-project-card">
-                <i class="fa-brands fa-js fa-xl"></i>
-                <i class="fa-brands fa-react fa-xl"></i>
-                <i class="fa-brands fa-vuejs fa-xl"></i>
-            </div>
-        </div>
-        <div class="button-add-project">
-            <button type="button" class="edit-button" id="edit-button">Edit</button>
-            <button type="button" class="delete-button" id="delete-button">Delete</button>
-        </div>
-         </div>
-        `;
-  }
+  // for (let i = 0; i < 1; i++) {
+  //   document.getElementById("form-project-card-add").innerHTML += `
+  //       <div class="form-project-card">
+  //       <div class="form-project-image">
+  //           <img id="image-add" class="image-add" src="image/g.gif"/>
+  //       </div>
+  //       <div class="title-add-project">
+  //       <h3>
+  //         <a href="blog-detail.html" 
+  //           >Kombatgrin 
+  //         </a>
+  //       </h3>
+  //     </div>
+  //       <div class="duration-project">
+  //           <p>Duration : 3 Month</p>
+  //       </div>
+  //       <div class="description-project">
+  //           <p class="scrolltable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, impedit cupiditate. Possimus rerum, molestiae officia modi sapiente adipisci recusandae eius deleniti dolores provident qui, eaque excepturi facilis voluptates eum dolorum minus vitae quaerat consequuntur doloribus nostrum? Consequuntur, iure. Quia hic cumque magnam doloribus ipsam maxime delectus ullam culpa. Ipsam labore perspiciatis corporis? Exercitationem velit in eius numquam eaque! Esse, possimus!Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+  //           Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
+  //       </div>
+  //       <div class="technologies-project">
+  //           <div class="technologies-project-card">
+  //               <i class="fa-brands fa-js fa-xl"></i>
+  //               <i class="fa-brands fa-react fa-xl"></i>
+  //               <i class="fa-brands fa-vuejs fa-xl"></i>
+  //           </div>
+  //       </div>
+  //       <div class="button-add-project">
+  //           <button type="button" class="edit-button" id="edit-button">Edit</button>
+  //           <button type="button" class="delete-button" id="delete-button">Delete</button>
+  //       </div>
+  //        </div>
+  //       `;
+  // }
 }
 
 dummyCard();
 
+
+// ===========================================================================================================================================================
+// menampilkan hari / tanggal / tahun
 function getTime(time) {
   let year = time.getFullYear();
   let month = time.getMonth();
@@ -354,8 +357,6 @@ function getTime(time) {
   let day = time.getDay();
   let hour = time.getHours();
   let minute = time.getMinutes();
-  let second = time.getSeconds();
-  let milliseconds = time.getMilliseconds();
   const nameMonth = [
     "January",
     "February",
@@ -370,23 +371,11 @@ function getTime(time) {
     "November",
     "December",
   ];
-
-  // console.log(year)
-  // console.log(month)
-  // console.log(nameMonth[month])
-  // console.log(date)
-  // console.log(day)
-  // console.log(hour)
-  // console.log(minute)
-  // console.log(second)
-  // console.log(milliseconds)
-
   return `${date} ${nameMonth[month]} ${year} ${hour} : ${minute} WIB`;
 }
-// const date = new Date()
-// console.log(getTime(date))
-// console.log(date)
 
+// =============================================================================================================================================================
+// menampilkan detik per post card 
 function getDuration(time) {
   const timeNow = new Date();
   const timePost = new Date(time);
@@ -405,15 +394,11 @@ function getDuration(time) {
           return minuteDistance + " Minute  Ago"
         } else {
             const secondDistance = Math.floor(distance / 1000);
-            // console.log(secondDistance + " Second  Ago");
             if (secondDistance > 0) {
           return secondDistance + " Second  Ago"
         }
       }
     }
   }
-
-//   console.log(dayDistance);
 }
-
 setInterval(renderBlog, 1000)

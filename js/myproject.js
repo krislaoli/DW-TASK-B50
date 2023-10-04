@@ -88,11 +88,15 @@ function renderBlog() {
     document.getElementById("form-project-card-add").innerHTML += `
     <div class="form-project-card">
                 <div class="form-project-image">
-                    <img id="image-add" class="image-add" src="${dataBlog[index].image}"/>
+                    <img id="image-add" class="image-add" src="${
+                      dataBlog[index].image
+                    }"/>
                 </div>
                 <div class="title-add-project">
                     <h3  style="overflow: auto; letter-spacing: 1px;"        class="scroll-name"
-                    "><a  href="blog-detail.html">${dataBlog[index].title}</a></h3>
+                    "><a  href="blog-detail.html">${
+                      dataBlog[index].title
+                    }</a></h3>
                 </div>
                 <div class="duration-project">
                     <p>Author : Mei Kristian Laoli</p>
@@ -110,6 +114,9 @@ function renderBlog() {
                         ${dataBlog[index].checkReactJS}
                         ${dataBlog[index].checkVueJs}
                     </div>
+                </div>
+                <div style="float:right;">
+                    <p style="color:white; font-size:20px">${getDuration(dataBlog[index].postedAt)}</p>
                 </div>
                 <div class="button-add-project">
                     <button type="button" class="edit-button" id="edit-button">Edit</button>
@@ -341,17 +348,29 @@ function dummyCard() {
 dummyCard();
 
 function getTime(time) {
-  let year = time.getFullYear()
-  let month = time.getMonth()
-  let date = time.getDate()
-  let day = time.getDay()
-  let hour = time.getHours()
-  let minute = time.getMinutes()
-  let second = time.getSeconds()
-  let milliseconds = time.getMilliseconds()
-  const nameMonth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December",] 
+  let year = time.getFullYear();
+  let month = time.getMonth();
+  let date = time.getDate();
+  let day = time.getDay();
+  let hour = time.getHours();
+  let minute = time.getMinutes();
+  let second = time.getSeconds();
+  let milliseconds = time.getMilliseconds();
+  const nameMonth = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
 
-  
   // console.log(year)
   // console.log(month)
   // console.log(nameMonth[month])
@@ -361,9 +380,40 @@ function getTime(time) {
   // console.log(minute)
   // console.log(second)
   // console.log(milliseconds)
-  
-  return `${date} ${nameMonth[month]} ${year} ${hour} : ${minute} WIB`
+
+  return `${date} ${nameMonth[month]} ${year} ${hour} : ${minute} WIB`;
 }
 // const date = new Date()
 // console.log(getTime(date))
 // console.log(date)
+
+function getDuration(time) {
+  const timeNow = new Date();
+  const timePost = new Date(time);
+  const distance = timeNow - timePost;
+
+  const dayDistance = Math.floor(distance / (24 * 60 * 60 * 1000));
+  if (dayDistance > 0) {
+    return dayDistance + "Day Ago";
+  } else {
+    const hourDistance = Math.floor(distance / (60 * 60 * 1000));
+    if (hourDistance > 0) {
+      return hourDistance + "Hour  Ago"
+    } else {
+      const minuteDistance = Math.floor(distance / (60 * 1000));
+      if (minuteDistance > 0) {
+          return minuteDistance + " Minute  Ago"
+        } else {
+            const secondDistance = Math.floor(distance / 1000);
+            // console.log(secondDistance + " Second  Ago");
+            if (secondDistance > 0) {
+          return secondDistance + " Second  Ago"
+        }
+      }
+    }
+  }
+
+//   console.log(dayDistance);
+}
+
+setInterval(renderBlog, 1000)

@@ -51,14 +51,14 @@ function getDuration(time) {
   } else {
     const hourDistance = Math.floor(distance / (60 * 60 * 1000));
     if (hourDistance > 0) {
-      // return hourDistance + "Hour  Ago"
+      return hourDistance + "Hour  Ago"
     } else {
       const minuteDistance = Math.floor(distance / (60 * 1000));
       if (minuteDistance > 0) {
-          // return minuteDistance + " Minute  Ago"
+          return minuteDistance + " Minute  Ago"
         } else {
             const secondDistance = Math.floor(distance / 1000);
-            console.log(secondDistance + " Second  Ago");
+            // console.log(secondDistance + " Second  Ago");
             if (secondDistance > 0) {
           return secondDistance + " Second  Ago"
         }
@@ -66,7 +66,7 @@ function getDuration(time) {
     }
   }
 
-  console.log(dayDistance);
+//   console.log(dayDistance);
 }
 
-getDuration("Wed Oct 04 2023 23:06:04 GMT+0700 (Western Indonesia Time)");
+getDuration("Wed Oct 04 2023 23:14:04 GMT+0700 (Western Indonesia Time)");

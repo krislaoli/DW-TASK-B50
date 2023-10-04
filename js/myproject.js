@@ -53,6 +53,7 @@ function addBlog(event) {
 
   let blog = {
     title,
+    postedAt: new Date(),
     content,
     image,
     checkNodeJS,
@@ -94,6 +95,8 @@ function renderBlog() {
                     "><a  href="blog-detail.html">${dataBlog[index].title}</a></h3>
                 </div>
                 <div class="duration-project">
+                    <p>Author : Mei Kristian Laoli</p>
+                    <p> ${getTime(dataBlog[index].postedAt)}</p>
                     <p>Duration : ${dataBlog[index].rentangProject}</p>
                 </div>
                 <div class="description-project">
@@ -337,17 +340,30 @@ function dummyCard() {
 
 dummyCard();
 
+function getTime(time) {
+  let year = time.getFullYear()
+  let month = time.getMonth()
+  let date = time.getDate()
+  let day = time.getDay()
+  let hour = time.getHours()
+  let minute = time.getMinutes()
+  let second = time.getSeconds()
+  let milliseconds = time.getMilliseconds()
+  const nameMonth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December",] 
 
-
-// Day 5=======================================
-
-
-// const jodi = 22
-// const juna = 34
-// const silvie = 30
-
-// if(jodi < 40 || juna > 40 && silvie < 20) {
-//   console.log("mereka belum usia lanjut")
-// } else {
-//   console.log("kamu pasti bisa")
-// }
+  
+  // console.log(year)
+  // console.log(month)
+  // console.log(nameMonth[month])
+  // console.log(date)
+  // console.log(day)
+  // console.log(hour)
+  // console.log(minute)
+  // console.log(second)
+  // console.log(milliseconds)
+  
+  return `${date} ${nameMonth[month]} ${year} ${hour} : ${minute} WIB`
+}
+// const date = new Date()
+// console.log(getTime(date))
+// console.log(date)

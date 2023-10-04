@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shorcut icon" type="icon" href="image/logo-website.PNG">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
+    </style>
+    <title>Contact Me</title>
+  </head>
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+
+  <body>
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li class="img-logo">
+            <a href="#">
+              <img class="logo-navbar" src="image/navbar-logo.png" alt="logo" />
+            </a>
+          </li>
+          <li>
+            <a class="link-nav" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="link-nav" href="myproject.html">My Project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a class="contact-nav" href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <section
+      class="contact"
+      style="
+        background-image: url(https://i.pinimg.com/originals/da/a1/19/daa119e2b37fd0af371641edf109da79.jpg);
+      "
+    >
+      <h2 class="title">GET IN TOUCH</h2>
+      <form>
+        <div class="input-container">
+          <label class="label" for="input-name">Name</label>
+          <input class="input" type="text" id="input-name" required />
+        </div>
+        <div class="input-container">
+          <label class="label" for="input-email">Email</label>
+          <input class="input" type="email" id="input-email" required />
+        </div>
+        <div class="input-container">
+          <label class="label" for="input-number">Phone Number</label>
+          <input class="input" type="phone" id="input-number" required />
+        </div>
+        <div class="input-container">
+          <label class="label" for="input-subject">Subject</label>
+          <select class="input" id="input-subject" required>
+            <option value="" hidden>Select</option>
+            <option>Frontend</option>
+            <option>Backend</option>
+            <option>Fullstack</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label class="label" for="input-massage">Your Message</label>
+          <textarea
+            class="input input-mesage"
+            name=""
+            id="input-massage"
+            cols="30"
+            rows="5"
+          ></textarea>
+        </div>
+
+        <!-- button submit -->
+        <div class="submit">
+          <label for="input-submit"></label>
+          <button
+            class="submit-button"
+            id="input-submit"
+            onclick="submitData()"
+            type="button"
+          >
+            Submit
+          </button>
+        </div>
+        <!-- button submit end -->
+      </form>
+    </section>
+
+    <script src="js/contact.js"></script>
+    <!-- <script src="js/marquee.js"></script> -->
+  </body>
+</html>

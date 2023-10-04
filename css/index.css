@@ -1,0 +1,182 @@
+/* style font family */
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tourney:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+/* style font family end */
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Londrina Solid';
+    letter-spacing: 2px;
+}
+
+/* teks berjalan */
+.goteks {
+    word-spacing: 5px;
+    font-size: 20px;
+    color: bisque;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+
+}
+
+.marquee {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+/* teks berjalan end */
+
+.container {
+    border-radius: 10px;
+    border: 1px solid yellow;
+    box-shadow: 0 0 15px chartreuse;
+    width: 80%;
+    padding: 40px;
+    margin: 20px auto;
+    font-size: 15px;
+    margin-top: 40px;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-body {
+    flex: 50%;
+}
+
+.card-body-title {
+    font-family: Fruktur;
+    color: bisque;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+}
+
+.card-body-biodata {
+    color: aqua;
+    font-family: Croissant One;
+}
+
+.card-body p {
+    width: 95%;
+    text-align: justify;
+}
+
+
+/* button contact */
+.container-contact {
+    font-family: Oswald;
+    font-size: 15px;
+    background-color: bisque;
+    width: 80px;
+    padding: 2px 5px;
+    border-radius: 11px;
+    border: 15px red;
+    transition: transform 0.3s ease;
+    font-size: 18px;
+}
+
+.container-contact:active {
+    transform: translateY(5px);
+}
+/* button contact end */
+
+.container-cv {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.container-cv .download {
+    text-decoration: none;
+    font-size: 18px;
+    color: bisque;
+    margin: 15px;
+}
+
+/* icon sosmed */
+.card-body .sosmed {
+    display: flex;
+    margin-top: 50px;
+    gap: 15px;
+    font-size: 30px;
+}
+
+.card-body .sosmed a {
+    margin-left: 10px;
+    color: bisque;
+    text-align: start;
+}
+
+/* icon sosmed end */
+
+.card-body {
+    font-family: Josefin Sans;
+    color: bisque;
+}
+
+/* card profile */
+.card-profile {
+    background-color: bisque;
+    border: 1px solid yellow;
+    box-shadow: 0 0 15px chartreuse;
+    border-radius: 10px;
+    width: 350px;
+    height: 560px;
+    margin: 50px auto;
+    margin-left: 20px;
+    margin-top: 45px;
+}
+
+.card-photo {
+    background-color: aqua;
+    border-radius: 10px;
+    display: grid;
+    margin: 0px auto;
+    width: 100%;
+}
+
+.card-biodata {
+    justify-content: center;
+    text-align: center;
+}
+
+.card-name {
+    color: red;
+    font-family: Tourney;
+    font-size: 30px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+.card-title {
+    font-family: Yatra One;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* card profile end */

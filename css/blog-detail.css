@@ -1,0 +1,156 @@
+/* style font family */
+@import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap");
+/* style font family end */
+
+.blog-detail {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  font-family: kelly slab;
+}
+
+.blog-detail-container {
+  color: bisque;
+  width: 80%;
+  margin: 40px 0;
+}
+
+.blog-detail-container h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 120%;
+  margin-bottom: 15px;
+}
+
+.blog-detail-container .author {
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  width: 100%;
+}
+
+.info .info-content {
+  flex: 80%;
+}
+
+.info .info-content img {
+  width: 100%;
+}
+
+.info-content-activity {
+  width: 100%;
+  margin-left: 40px;
+}
+
+.info-content-activity a {
+  margin-right: 10px;
+}
+
+.technologies-project td {
+  padding: 5px;
+  width: 170px;
+  letter-spacing: 2px;
+}
+
+.info-content-paragraph p {
+  width: 100%;
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: justify;
+}
+
+/* coba coba */
+
+.container-project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-card-project {
+  margin: 20px 20px;
+  padding: 25px;
+  width: 20%;
+  box-shadow: 0px 0px 20px #d5d5d5;
+  border-radius: 10px;
+}
+
+.image-project-container {
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.image-project-list {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.description-project p {
+  text-align: justify;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 20px;
+  height: 40px;
+}
+
+.tech-card-container {
+  margin: 40px 0px;
+}
+
+.tech-project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.button-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.button-card-container button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  margin-top: 0px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #ed4d37;
+  color: white;
+  padding: 6px 25px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+}

@@ -340,6 +340,17 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+
+  .navbar {
+    padding: 0px 0px;
+  }
+
+  .logo-navbar {
+    justify-content: center;
+    margin: auto;
+    display: block;
+  }
+
   .portofolio .right {
     max-width: 200px;
     justify-content: center;

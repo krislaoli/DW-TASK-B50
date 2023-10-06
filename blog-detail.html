@@ -16,10 +16,11 @@
     <title>Blog Detail</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav>
+
+    <!-- navbar -->
+    <nav class="navbar">
       <div class="nav-left">
-        <ul>
+        <ul class="nav-links left">
           <li class="img-logo">
             <a href="index.html">
               <img class="logo-navbar" src="image/navbar-logo.png" alt="logo" />
@@ -36,8 +37,31 @@
       <div class="nav-right">
         <a class="contact-nav" href="contact.html">Contact</a>
       </div>
+      <ul class="nav-links right" id="barsmenu">
+        <li>
+          <button
+            style="
+              background-color: transparent;
+              border: none;
+              color: yellow;
+              cursor: pointer;
+            "
+            onclick="openHamburger();"
+          >
+            <i class="fa-2x fa-solid fa-bars"></i>
+          </button>
+        </li>
+      </ul>
     </nav>
-    <!-- Navbar End -->
+    <!-- navbar end -->
+
+    <!-- hamburger menu -->
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="myproject.html">My Project</a>
+      <a href="contact.html" class="hamburger-active">Contact</a>
+    </div>
+    <!-- hamburger menu end -->
 
     <!-- blog -->
     <div class="blog-detail">
@@ -91,5 +115,7 @@
         </div>
       </div>
     </div>
+
+    <script src="js/navbar.js"></script>
   </body>
 </html>

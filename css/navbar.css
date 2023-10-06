@@ -141,6 +141,8 @@ body {
         justify-content: center;
         padding: 15px;
         border: 1px solid yellow;
+        color: bisque;
+        font-family: Jockey One;
     }
 
     .navbar {

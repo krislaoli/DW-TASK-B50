@@ -62,18 +62,18 @@ body {
   padding: 40px 60px;
   display: flex;
   gap: 100px;
-  /* width: 80%;
-        font-size: 15px;
-        margin-top: 40px;
-        display: flex; */
+  width: 80%;
+  font-size: 15px;
+  margin-top: 40px;
+  display: flex;
 }
 
-.container .card-body {
+.container .left {
   flex: 70%;
   line-height: 25px;
 }
 
-.container .card-profile-group-elemen {
+.container .right {
   margin-top: 10px;
   justify-content: end;
   display: flex;
@@ -82,7 +82,7 @@ body {
   flex: 30%;
 }
 
-.container .card-profile-group-elemen .card-profile-group img {
+.container .right .card-profile-group img {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
@@ -101,7 +101,7 @@ body {
   font-family: Londrina Solid;
 }
 
-.card-body p {
+.left p {
   width: 95%;
   text-align: justify;
 }
@@ -139,14 +139,14 @@ body {
 }
 
 /* icon sosmed */
-.card-body .sosmed {
+.left .sosmed {
   display: flex;
   margin-top: 50px;
   gap: 15px;
   font-size: 30px;
 }
 
-.card-body .sosmed a {
+.left .sosmed a {
   margin-left: 10px;
   color: bisque;
   text-align: start;
@@ -154,13 +154,13 @@ body {
 
 /* icon sosmed end */
 
-.card-body {
+.left {
   font-family: Josefin Sans;
   color: bisque;
 }
 
 /* card profile */
-.card-profile-group-elemen {
+.right {
   margin: 0 auto;
   flex: 30%;
   margin-top: 10px;
@@ -257,54 +257,69 @@ body {
 
 @media only screen and (max-width: 992px) {
 
-  .link-nav {
-    display: none;
-  }
-
-  .contact-nav {
-    display: none;
-  }
-
   .project-card {
     flex-basis: calc(50% - 25px);
   }
 
-  #barsmenu {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-
-  .navbar {
-    padding: 1px 1px;
+  .container {
+    margin:  0 auto;
   }
 
-  /* profile-card */
-  .card-profile-group-elemen {
+  .right {
     margin: 0 auto;
   }
 
-  /* profile-card end */
-
-  .portofolio {
+  .container {
     flex-direction: column;
     gap: 30px;
   }
 
-  .portofolio .right {
+  
+  .container .right {
     margin: 0 auto;
   }
 
-  .navbar {
-    padding: 10px 30px;
-  }
-
-  .portofolio .left {
+  .container .left {
     order: 2;
   }
 
-  .portofolio .right {
+  .container .right {
+    order: 1;
+  }
+
+  .project-detail .top .project-image {
+    flex-basis: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* profile-card */
+  .right {
+    margin: 0 auto;
+  }
+
+  .container {
+    margin:  0 auto;
+  }
+
+  /* profile-card end */
+
+  .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .container .right {
+    margin: 0 auto;
+  }
+
+  .container .left {
+    order: 2;
+  }
+
+  .container .right {
     order: 1;
   }
 
@@ -320,9 +335,6 @@ body {
     flex-basis: 100%;
   }
 
-  #barsmenu {
-    display: block;
-  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -334,25 +346,16 @@ body {
     display: none;
   }
 
-  #barsmenu {
-    display: block;
-  }
 }
 
 @media only screen and (max-width: 480px) {
-
-  .navbar {
-    padding: 0px 0px;
-  }
-
-  .logo-navbar {
-    justify-content: center;
-    margin: auto;
-    display: block;
-  }
-
-  .portofolio .right {
+  .container {
     max-width: 200px;
+    justify-content: center;
+  }
+  
+  .right {
+    max-width: 100px;
     justify-content: center;
   }
 
@@ -361,6 +364,7 @@ body {
   }
 
   .input-container .checkbox-container-inner {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
+
 }

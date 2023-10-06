@@ -352,13 +352,13 @@ body {
 
 @media only screen and (max-width: 480px) {
   body {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .container {
     max-width: 270px;
     justify-content: center;
-    padding: 30px 80px;
+    padding: 30px 50px;
   }
 
   .right {
@@ -386,8 +386,10 @@ body {
     letter-spacing: 1px;
     display: flex;
     word-spacing: 0px;
-    margin: 11px;
+    margin: auto;
     font-size: 15px;
+    text-align: justify;
+
   }
 
   .container-contact {

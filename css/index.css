@@ -96,6 +96,7 @@ body {
   letter-spacing: 2px;
   font-size: 40px;
   text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+  line-height: 1.2;
 }
 
 .card-body-biodata {
@@ -206,69 +207,16 @@ body {
   letter-spacing: 1px;
 }
 
-/* .card-profile {
-    background-color: bisque;
-    border: 1px solid yellow;
-    box-shadow: 0 0 15px chartreuse;
-    border-radius: 10px;
-    width: 350px;
-    height: 560px;
-    margin: 50px auto;
-    margin-left: 20px;
-    margin-top: 45px;
-} */
-
-/* .card-photo {
-    background-color: aqua;
-    border-radius: 10px;
-    display: grid;
-    margin: 0px auto;
-    width: 100%;
-} */
-
-/* .card-biodata {
-    justify-content: center;
-    text-align: center;
-} */
-/* 
-.card-name {
-    color: red;
-    font-family: Tourney;
-    font-size: 30px;
-    letter-spacing: 1px;
-    word-spacing: 4px;
-}
-
-.card-title {
-    font-family: Yatra One;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 1px;
-} */
-/* card profile end */
-
 /* =================================================================================================================================================================================================================================================================================================== */
 
-
 /* Responsive */
-@media only screen and (max-width: 1200px) {
-  .project-card {
-    flex-basis: calc(33.33% - 25px);
-  }
-}
+@media only screen and (max-width: 1200px) {}
 
 @media only screen and (max-width: 992px) {
 
-  .project-card {
-    flex-basis: calc(50% - 25px);
-  }
-
-  .container {
-    margin: 0 auto;
-  }
-
   .right {
     margin: 0 auto;
+    order: 1;
   }
 
   .container {
@@ -276,38 +224,17 @@ body {
     gap: 30px;
   }
 
-
   .container .right {
     margin: 0 auto;
+    order: 1;
   }
 
   .container .left {
     order: 2;
   }
-
-  .container .right {
-    order: 1;
-  }
-
-  .project-detail .top .project-image {
-    flex-basis: 100%;
-  }
-
 }
 
 @media only screen and (max-width: 768px) {
-
-  /* profile-card */
-  .right {
-    margin: 0 auto;
-  }
-
-  .container {
-    margin: 0 auto;
-  }
-
-  /* profile-card end */
-
   .container {
     flex-direction: column;
     gap: 30px;
@@ -315,101 +242,66 @@ body {
 
   .container .right {
     margin: 0 auto;
+    order: 1;
   }
 
   .container .left {
     order: 2;
   }
-
-  .container .right {
-    order: 1;
-  }
-
-  .project-detail .top .project-image {
-    flex-basis: 100%;
-  }
-
-  .project-detail .top .project-attr {
-    flex-basis: 100%;
-  }
-
-  .project-detail .top .project-attr .project-technologies div {
-    flex-basis: 100%;
-  }
-
 }
 
 @media only screen and (max-width: 576px) {
-  .project-card {
-    flex-basis: calc(100% - 25px);
+  .container {
+    max-width: 430px !important;
+    justify-content: center;
   }
-
-  .item-collapse {
-    display: none;
-  }
-
 }
 
-@media only screen and (max-width: 480px) {
-  body {
-    margin-bottom: 40px;
-  }
 
+@media only screen and (max-width: 480px) {
   .container {
-    max-width: 270px;
+    max-width: 260px !important;
     justify-content: center;
-    padding: 30px 50px;
   }
 
   .right {
-    padding-bottom: 0px;
-    margin: 0 auto;
     justify-content: center;
-  }
-  
-  .card-img-profile {
-    background-image: url("./image/a.gif");
   }
 
   .card-body-title {
-    word-spacing: 1px;
-    letter-spacing: 6px;
     font-size: 23px;
-    font-weight: 900;
-    margin: 11px;
-    justify-content: center;
-    padding-bottom: 20px;
   }
 
   .card-body-biodata {
     justify-content: center;
     letter-spacing: 1px;
     display: flex;
-    word-spacing: 0px;
     margin: auto;
-    font-size: 15px;
-    text-align: justify;
-
   }
 
   .container-contact {
-    margin: 0 auto;
-    justify-content: center;
-    display: flex;
-    font-family: Squada One;
-
+    margin: auto !important;
+    justify-content: center !important;
+    display: flex !important;
   }
 
   .download {
-    margin: 0 auto;
+    margin: auto;
     justify-content: center;
     display: flex;
-    font-family: Chakra Petch;
+    font-family: chakra petch;
   }
 
   .sosmed {
-    margin: 11px auto;
+    margin: auto;
     justify-content: center;
     display: flex;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .container {
+    max-width: 200px !important;
+    justify-content: center;
   }
 }

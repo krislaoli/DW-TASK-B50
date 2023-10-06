@@ -68,35 +68,35 @@
           <form onsubmit="addBlog(event)">
             <h1 class="name-project">Add My Project</h1>
             <div class="project-blog">
-              <label for="input-blog-title">Project Name</label>
-              <input id="input-blog-title" type="text" />
+              <label class="label-input" for="input-blog-title">Project Name</label>
+              <input id="input-blog-title" type="text" class="label-input-input"/>
             </div>
 
             <!-- form date -->
             <div class="input-date">
-              <div class="input-row" style="box-sizing: border-box;">
-                <span>
-                  <label for="input-start-date">Start Date</label>
-                  <input id="input-start-date" type="date" />
-                </span>
-                <span>
-                  <label for="input-end-date">End Date</label>
-                  <input id="input-end-date" type="date" />
-                </span>
+              <div class="input-container " style="box-sizing: border-box;">
+                <div>
+                  <label class="label-input" for="input-start-date">Start Date</label>
+                  <input id="input-start-date" type="date" class="label-input-input"/>
+                </div>
+                <div>
+                  <label class="label-input" for="input-end-date">End Date</label>
+                  <input id="input-end-date" type="date" class="label-input-input"/>
+                </div>
               </div>
             </div>
             <!-- form date end -->
 
             <!-- form description -->
-            <div>
-              <label for="input-content-blog">Description</label>
-              <textarea id="input-content-blog" cols="30" rows="10"></textarea>
+            <div class="input-description">
+              <label class="label-input" for="input-content-blog">Description</label>
+              <textarea id="input-content-blog" cols="30" rows="10" class="label-input-input"></textarea>
             </div>
             <!-- form description end -->
 
             <!-- form technologies -->
-            <div>
-              <label>Technologies</label>
+            <div class="input-tecno">
+              <label class="label-input">Technologies</label>
               <div class="check-box-Technologies">
                 <!-- icon check box -->
                 <div class="coloum-check-box">
@@ -144,7 +144,7 @@
                   <p>Attach File</p>
                   <img src="image/cliping.png" alt="" />
                 </label>
-                <input type="file" id="input-blog-image" hidden />
+                <input type="file" id="input-blog-image" hidden class="label-input-input"/>
               </div>
             </div>
             <!-- upload image end -->

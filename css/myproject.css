@@ -96,7 +96,25 @@ select {
     margin-right: 5px;
 }
 
-.form-blog form .input-row {
+.project-blog .label-input .input-date .input-description .input-tecno {
+    margin-bottom: 8px;
+    font-size: 8px;
+    display: block;
+}
+
+.project-blog .label-input .input-date .input-description .input-tecno {
+    margin-bottom: 8px;
+    font-size: 8px;
+    display: block;
+}
+
+.label-input-input
+    
+.input-container .project-blog {
+    margin-bottom: 20px;
+}
+
+.form-blog form .input-container{
     display: inline-flex;
     width: 100%;
     gap: 25px;
@@ -206,7 +224,7 @@ select {
     margin-bottom: 10px;
 }
 
-.card-duration-icon  {
+.card-duration-icon {
     color: bisque;
 }
 
@@ -301,3 +319,23 @@ button {
     color: black;
     font-size: 20px;
 }
+
+/* Media Query */
+
+@media only screen and (max-width: 1200px) {
+    body {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 576px) {}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 475px) {}
+
+@media only screen and (max-width: 280) {}

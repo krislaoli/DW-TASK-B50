@@ -169,39 +169,39 @@ function dummyCard() {
   }
 
   // card 2
-  // for (let i = 0; i < 1; i++) {
-  //   document.getElementById("form-project-card-add").innerHTML += `
-  //       <div class="form-project-card">
-  //       <div class="form-project-image">
-  //           <img id="image-add" class="image-add" src="image/b.gif"/>
-  //       </div>
-  //       <div class="title-add-project">
-  //       <h3>
-  //         <a href="blog-detail.html" 
-  //           >Suluyuianong 
-  //         </a>
-  //       </h3>
-  //     </div>
-  //       <div class="duration-project">
-  //           <p>Duration : 3 Month</p>
-  //       </div>
-  //       <div class="description-project">
-  //           <p class="scrolltable">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-  //           Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
-  //       </div>
-  //       <div class="technologies-project">
-  //           <div class="technologies-project-card">
-  //               <i class="fa-brands fa-node-js fa-xl"></i>
-  //               <i class="fa-brands fa-js fa-xl"></i>
-  //           </div>
-  //       </div>
-  //       <div class="button-add-project">
-  //           <button type="button" class="edit-button" id="edit-button">Edit</button>
-  //           <button type="button" class="delete-button" id="delete-button">Delete</button>
-  //       </div>
-  //        </div>
-  //       `;
-  // }
+  for (let i = 0; i < 1; i++) {
+    document.getElementById("form-project-card-add").innerHTML += `
+        <div class="form-project-card">
+        <div class="form-project-image">
+            <img id="image-add" class="image-add" src="image/b.gif"/>
+        </div>
+        <div class="title-add-project">
+        <h3>
+          <a href="blog-detail.html" 
+            >Suluyuianong 
+          </a>
+        </h3>
+      </div>
+        <div class="duration-project">
+            <p>Duration : 3 Month</p>
+        </div>
+        <div class="description-project">
+            <p class="scrolltable">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Praesentium dolores ullam minima reiciendis adipisci quisquam</p>
+        </div>
+        <div class="technologies-project">
+            <div class="technologies-project-card">
+                <i class="fa-brands fa-node-js fa-xl"></i>
+                <i class="fa-brands fa-js fa-xl"></i>
+            </div>
+        </div>
+        <div class="button-add-project">
+            <button type="button" class="edit-button" id="edit-button">Edit</button>
+            <button type="button" class="delete-button" id="delete-button">Delete</button>
+        </div>
+         </div>
+        `;
+  }
 
   // card 3
   // for (let i = 0; i < 1; i++) {
@@ -351,55 +351,55 @@ dummyCard();
 
 // ===========================================================================================================================================================
 // menampilkan hari / tanggal / tahun
-// function getTime(time) {
-//   let year = time.getFullYear();
-//   let month = time.getMonth();
-//   let date = time.getDate();
-//   let day = time.getDay();
-//   let hour = time.getHours();
-//   let minute = time.getMinutes();
-//   const nameMonth = [
-//     "January",
-//     "February",
-//     "March",
-//     "April",
-//     "May",
-//     "June",
-//     "July",
-//     "August",
-//     "September",
-//     "October",
-//     "November",
-//     "December",
-//   ];
-//   return `${date} ${nameMonth[month]} ${year} ${hour} : ${minute} WIB`;
-// }
+function getTime(time) {
+  let year = time.getFullYear();
+  let month = time.getMonth();
+  let date = time.getDate();
+  let day = time.getDay();
+  let hour = time.getHours();
+  let minute = time.getMinutes();
+  const nameMonth = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  return `${date} ${nameMonth[month]} ${year} ${hour} : ${minute} WIB`;
+}
 
 // =============================================================================================================================================================
 // menampilkan detik per post card 
-// function getDuration(time) {
-//   const timeNow = new Date();
-//   const timePost = new Date(time);
-//   const distance = timeNow - timePost;
+function getDuration(time) {
+  const timeNow = new Date();
+  const timePost = new Date(time);
+  const distance = timeNow - timePost;
 
-//   const dayDistance = Math.floor(distance / (24 * 60 * 60 * 1000));
-//   if (dayDistance > 0) {
-//     return dayDistance + "Day Ago";
-//   } else {
-//     const hourDistance = Math.floor(distance / (60 * 60 * 1000));
-//     if (hourDistance > 0) {
-//       return hourDistance + "Hour  Ago"
-//     } else {
-//       const minuteDistance = Math.floor(distance / (60 * 1000));
-//       if (minuteDistance > 0) {
-//           return minuteDistance + " Minute  Ago"
-//         } else {
-//             const secondDistance = Math.floor(distance / 1000);
-//             if (secondDistance > 0) {
-//           return secondDistance + " Second  Ago"
-//         }
-//       }
-//     }
-//   }
-// }
-// setInterval(renderBlog, 1000)
+  const dayDistance = Math.floor(distance / (24 * 60 * 60 * 1000));
+  if (dayDistance > 0) {
+    return dayDistance + "Day Ago";
+  } else {
+    const hourDistance = Math.floor(distance / (60 * 60 * 1000));
+    if (hourDistance > 0) {
+      return hourDistance + "Hour  Ago"
+    } else {
+      const minuteDistance = Math.floor(distance / (60 * 1000));
+      if (minuteDistance > 0) {
+          return minuteDistance + " Minute  Ago"
+        } else {
+            const secondDistance = Math.floor(distance / 1000);
+            if (secondDistance > 0) {
+          return secondDistance + " Second  Ago"
+        }
+      }
+    }
+  }
+}
+setInterval(renderBlog, 1000)

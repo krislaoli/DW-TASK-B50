@@ -127,9 +127,14 @@ body {
 @media only screen and (max-width: 1200px) {}
 
 @media only screen and (max-width: 992px) {
+
+    .logo-navbar {
+        margin: 1px;
+        display: block;
+    }
+
     .hamburger-nav-container a {
         text-decoration: none;
-        color: #fff;
         background-color: #001524;
         display: flex;
         align-items: 20px;
@@ -171,29 +176,30 @@ body {
 @media only screen and (max-width: 576px) {
     #barsmenu {
         display: block;
-      }
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
-    
-  .hamburger-nav-container a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #001524;
-    display: flex;
-    align-items: 20px;
-    justify-content: center;
-    padding: 15px;
-    border: 1px solid yellow;
-  }
 
-  .navbar {
-    padding: 0px 0px;
-  }
+    .hamburger-nav-container a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #001524;
+        display: flex;
+        align-items: 20px;
+        justify-content: center;
+        padding: 15px;
+        border: 1px solid yellow;
+    }
 
-  .logo-navbar {
-    justify-content: center;
-    margin: auto;
-    display: block;
-  }
+    .navbar {
+        padding: 0px 0px;
+    }
+
+    .logo-navbar {
+        margin: auto;
+        justify-content: center;
+        display: block;
+    }
 }

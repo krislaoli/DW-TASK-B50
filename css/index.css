@@ -262,7 +262,7 @@ body {
   }
 
   .container {
-    margin:  0 auto;
+    margin: 0 auto;
   }
 
   .right {
@@ -274,7 +274,7 @@ body {
     gap: 30px;
   }
 
-  
+
   .container .right {
     margin: 0 auto;
   }
@@ -301,7 +301,7 @@ body {
   }
 
   .container {
-    margin:  0 auto;
+    margin: 0 auto;
   }
 
   /* profile-card end */
@@ -350,21 +350,47 @@ body {
 
 @media only screen and (max-width: 480px) {
   .container {
-    max-width: 200px;
+    max-width: 280px;
     justify-content: center;
   }
   
   .right {
+    margin: 0 auto;
     max-width: 100px;
     justify-content: center;
   }
 
-  .input-container .checkbox-container {
-    display: block;
+  .card-body-title {
+    word-spacing: px;
+    letter-spacing: 4px;
+    font-size: 25px;
+    margin: 11px;
+    justify-content: center;
   }
 
-  .input-container .checkbox-container-inner {
-    margin-bottom: 10px;
+  .card-body-biodata {
+    justify-content: center;
+    letter-spacing: 1px;
+    display: flex;
+    word-spacing: 0px;
+    margin: 11px;
   }
 
+  .container-contact {
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .download {
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .sosmed {
+    margin: 11px auto;
+    justify-content: center;
+    display: flex;
+  }
 }

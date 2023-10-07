@@ -1,8 +1,6 @@
 /* style font */
 @import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
-
-
 /* style font end */
 
 body {
@@ -102,19 +100,17 @@ select {
     display: block;
 }
 
-.project-blog .label-input .input-date .input-description .input-tecno {
+.project-blog .input-container .input-date .input-description .input-tecno {
     margin-bottom: 8px;
     font-size: 8px;
     display: block;
 }
 
-.label-input-input
-    
-.input-container .project-blog {
+.label-input-input .input-container .project-blog {
     margin-bottom: 20px;
 }
 
-.form-blog form .input-container{
+.form-blog form .input-container {
     display: inline-flex;
     width: 100%;
     gap: 25px;
@@ -326,16 +322,36 @@ button {
     body {
         margin-bottom: 30px;
     }
+
+    .form-project-card {
+        flex-basis: calc(33.33% - 25px);
+    }
 }
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+    .form-project-card {
+        flex-basis: calc(50% - 25px);
+    }
+}
 
 @media only screen and (max-width: 768px) {}
 
-@media only screen and (max-width: 576px) {}
+@media only screen and (max-width: 576px) {
+    .project-card {
+        flex-basis: calc(100% - 25px);
+    }
+}
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 475px) {
+    .label-input {
+        display: block;
+    }
 
-@media only screen and (max-width: 475px) {}
+    .input-tecno .check-box-Technologies {
+        display: block;
+    }
 
-@media only screen and (max-width: 280) {}
+    .input-tecno .check-box-programer {
+        margin-bottom: 5px;
+    }
+}

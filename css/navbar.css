@@ -101,6 +101,8 @@ body {
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 20px;
+    text-shadow: 2px 2px 2px wheat;
+
 }
 
 .nav-right a:hover {
@@ -119,6 +121,10 @@ body {
     display: none;
 }
 
+.nav-left .nav-active {
+   color: orangered;
+   text-shadow: 1px 1px 1px black;
+}
 
 .hamburger-nav-container .hamburger-active {
     background-color: orangered;

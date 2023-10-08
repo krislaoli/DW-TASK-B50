@@ -1,0 +1,357 @@
+/* style font */
+@import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
+/* style font end */
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.form-my-project {
+    background-image: url('https://i.pinimg.com/originals/da/a1/19/daa119e2b37fd0af371641edf109da79.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 600px;
+    margin: 45px auto;
+    padding: 30px 90px;
+    border-radius: 10px;
+    border: 1px solid bisque;
+    box-shadow: 0 0 20px bisque;
+    box-sizing: border-box;
+    color: bisque;
+    font-family: Kelly Slab;
+}
+
+.name-project {
+    color: yellow;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    font-size: 29px;
+    font-family: Kelly Slab;
+}
+
+.form-blog form label {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.form-blog form .check-box-Technologies label {
+    font-size: 15px;
+}
+
+.form-blog form table {
+    justify-content: center;
+    align-items: center;
+}
+
+.form-blog form input,
+textarea,
+select {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+
+.form-blog form .check-box-Technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.form-blog form .coloum-check-box {
+    margin-top: 0px;
+}
+
+.form-blog form .check-box-programer {
+    display: flex;
+    gap: 10px;
+}
+
+.form-blog form .check-box-programer input {
+    width: fit-content;
+    padding: 0px;
+    margin-top: 0px;
+    border-radius: 0px;
+    border-radius: 1px solid orange;
+    size: none;
+    box-shadow: 0px 0px 0px wheat;
+}
+
+
+.form-blog form .check-box-programer .text-icon {
+    margin-right: 5px;
+}
+
+.project-blog .label-input .input-date .input-description .input-tecno {
+    margin-bottom: 8px;
+    font-size: 8px;
+    display: block;
+}
+
+.project-blog .input-container .input-date .input-description .input-tecno {
+    margin-bottom: 8px;
+    font-size: 8px;
+    display: block;
+}
+
+.label-input-input .input-container .project-blog {
+    margin-bottom: 20px;
+}
+
+.form-blog form .input-container {
+    display: inline-flex;
+    width: 100%;
+    gap: 25px;
+}
+
+.form-blog form textarea {
+    height: 250px;
+    resize: none;
+}
+
+.form-blog form .input-blog-image-group {
+    width: 100%;
+    font-size: 20px;
+    background-color: bisque;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    color: black;
+}
+
+.form-blog form .input-blog-image-group img {
+    width: 35px;
+}
+
+.form-blog form .input-blog-image-group label p {
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: bisque;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.form-blog form .input-blog-image-group label {
+    width: 95%;
+    height: 3px;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-blog form .submit-blog {
+    text-align: right;
+}
+
+.form-blog form .submit-blog .submit-blog-style {
+    font-family: kelly slab;
+
+}
+
+.form-blog form button {
+    margin-top: 10px;
+    padding: 2px 18px;
+    font-size: 20px;
+    background-color: yellow;
+    border-radius: 6px;
+    border: 2px solid red;
+    color: black;
+    cursor: pointer;
+    justify-content: end;
+}
+
+/* ================================================================================================================================ */
+/* prject card add */
+
+.name-project-card {
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    top: 15px;
+    font-family: Kelly Slab;
+}
+
+.form-project-card-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-project-card {
+    background-color: black;
+    margin: 20px 20px;
+    padding: 25px;
+    width: 25%;
+    box-shadow: 0px 0px 20px;
+    border-radius: 10px;
+    font-family: kelly slab;
+}
+
+.form-project-image {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.image-add {
+    object-fit: cover;
+    width: 110%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card-duration-icon {
+    color: bisque;
+}
+
+.duration-project {
+    color: bisque;
+}
+
+.title-add-project a {
+    text-decoration: none;
+    color: yellow;
+    overflow: scroll;
+    height: 100px;
+    letter-spacing: 1px;
+}
+
+.scroll-name {
+    text-overflow: ellipsis;
+    letter-spacing: 2px;
+}
+
+.description-project p {
+    color: bisque;
+}
+
+.scrolltable {
+    overflow: auto;
+    height: 100px;
+}
+
+.description-project .description-project-coment {
+    text-align: justify;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.technologies-project {
+    margin: 40px 0px;
+    color: bisque;
+}
+
+.technologies-project-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.button-add-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.button-add-project button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+
+button {
+    background-color: y;
+    color: black;
+    padding: 6px 25px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-family: kelly slab;
+    font-weight: bold;
+}
+
+.edit-button {
+    background-color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.delete-button {
+    background-color: red;
+    color: black;
+    font-size: 20px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1200px) {
+    body {
+        margin-bottom: 30px;
+    }
+
+    .form-project-card {
+        flex-basis: calc(33.33% - 25px);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .form-project-card {
+        flex-basis: calc(50% - 25px);
+    }
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 576px) {
+    .project-card {
+        flex-basis: calc(100% - 25px);
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .label-input {
+        display: block;
+    }
+
+    .input-tecno .check-box-Technologies {
+        display: block;
+    }
+
+    .input-tecno .check-box-programer {
+        margin-bottom: 5px;
+    }
+}

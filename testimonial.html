@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shorcut icon" type="icon" href="image/logo-website.PNG" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/testimonial.css" />
+    <title>Testimonial</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <ul class="nav-links left">
+          <li class="img-logo">
+            <a href="index.html">
+              <img class="logo-navbar" src="image/navbar-logo.png" alt="logo" />
+            </a>
+          </li>
+          <li>
+            <a class="link-nav" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="link-nav" href="myproject.html">My Project</a>
+          </li>
+          <li>
+            <a class="link-nav nav-active" href="testimonial.html"
+              >Testimonial</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a class="contact-nav" href="contact.html">Contact</a>
+      </div>
+      <ul class="nav-links right" id="barsmenu">
+        <li>
+          <button
+            style="
+              background-color: transparent;
+              border: none;
+              color: yellow;
+              cursor: pointer;
+            "
+            onclick="openHamburger();"
+          >
+            <i class="fa-2x fa-solid fa-bars"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hamburger menu -->
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="myproject.html">My Project</a>
+      <a href="testimonial.html" class="hamburger-active">Testimonial</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <!-- hamburger menu end -->
+
+    <div class="container-rating">
+      <h1 class="text-body">My Testimonial</h1>
+      <div class="container-star">
+        <h2>Rating By Star</h2>
+        <div class="rating-star">
+          <button class="star-button-all start-name" value="0" onclick="alltestimonials()">All Star <i class="fa-solid fa-star"></i></button>
+          <button class="star-button-1 star-number" value="0" onclick="filtertestimonials(1)">1 <i class="star-effect fa-solid fa-star"></i></button>
+          <button class="star-button-2 star-number" value="0" onclick="filtertestimonials(2)">2 <i class="star-effect fa-solid fa-star"></i></button>
+          <button class="star-button-3 star-number" value="0" onclick="filtertestimonials(3)">3 <i class="star-effect fa-solid fa-star"></i></button>
+          <button class="star-button-4 star-number" value="0" onclick="filtertestimonials(4)">4 <i class="star-effect fa-solid fa-star"></i></button>
+          <button class="star-button-5 star-number" value="0" onclick="filtertestimonials(5)">5 <i class="star-effect fa-solid fa-star"></i></button>
+          <button class="star-button-6 star-number" value="0" onclick="filtertestimonials(6)">6 <i class="star-effect fa-solid fa-star"></i></button>
+          <button class="star-button-7 star-number" value="0" onclick="filtertestimonials(7)">7 <i class="star-effect fa-solid fa-star"></i></button>
+          <button class="star-button-8 star-number" value="0" onclick="filtertestimonials(8)">8 <i class="star-effect fa-solid fa-star"></i></button>
+          <button class="star-button-9 star-number" value="0" onclick="filtertestimonials(9)">9 <i class="star-effect fa-solid fa-star"></i></button>
+          <button class="star-button-10 star-number" value="0" onclick="filtertestimonials(10)">10 <i class="star-effect fa-solid fa-star"></i></button>
+        </div>
+      </div>
+    </div>
+    <section class="testimonials" id="testimonials"></section>
+
+    <script src="js/testimonial.js"></script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>

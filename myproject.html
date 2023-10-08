@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shorcut icon" type="icon" href="image/logo-website.PNG" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/myproject.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>My Project</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <ul class="nav-links left">
+          <li class="img-logo">
+            <a href="index.html">
+              <img class="logo-navbar" src="image/navbar-logo.png" alt="logo" />
+            </a>
+          </li>
+          <li>
+            <a class="link-nav" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="link-nav nav-active" href="myproject.html">My Project</a>
+          </li>
+          <li>
+            <a class="link-nav" href="testimonial.html">Testimonial</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <a class="contact-nav" href="contact.html">Contact</a>
+      </div>
+      <ul class="nav-links right" id="barsmenu">
+        <li>
+          <button
+            style="
+              background-color: transparent;
+              border: none;
+              color: yellow;
+              cursor: pointer;
+            "
+            onclick="openHamburger();"
+          >
+            <i class="fa-2x fa-solid fa-bars"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hamburger menu -->
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="myproject.html" class="hamburger-active">My Project</a>
+      <a href="testimonial.html">Testimonial</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <!-- hamburger menu end -->
+
+    <!-- My Project -->
+    <section class="my-project">
+      <div class="form-my-project">
+        <div class="form-blog">
+          <form onsubmit="addBlog(event)">
+            <h1 class="name-project">Add My Project</h1>
+            <div class="project-blog">
+              <label class="label-input" for="input-blog-title"
+                >Project Name</label
+              >
+              <input
+                id="input-blog-title"
+                type="text"
+                class="label-input-input"
+              />
+            </div>
+
+            <!-- form date -->
+            <div class="input-date">
+              <div class="input-container" style="box-sizing: border-box">
+                <div style="width: 100%;">
+                  <label class="label-input" for="input-start-date"
+                    >Start Date</label
+                  >
+                  <input
+                    id="input-start-date"
+                    type="date"
+                    class="label-input-input"
+                  />
+                </div>
+                <div style="width: 100%;">
+                  <label class="label-input" for="input-end-date"
+                    >End Date</label
+                  >
+                  <input
+                    id="input-end-date"
+                    type="date"
+                    class="label-input-input"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- form date end -->
+
+            <!-- form description -->
+            <div class="input-description">
+              <label class="label-input" for="input-content-blog"
+                >Description</label
+              >
+              <textarea
+                id="input-content-blog"
+                cols="30"
+                rows="10"
+                class="label-input-input"
+              ></textarea>
+            </div>
+            <!-- form description end -->
+
+            <!-- form technologies -->
+            <div class="input-tecno">
+              <label class="label-input">Technologies</label>
+              <div class="check-box-Technologies">
+                <!-- icon check box -->
+                <div class="coloum-check-box">
+                  <div class="check-box-programer">
+                    <input type="checkbox" id="check-nodejs" />
+                    <span>
+                      <label class="spacing-text-icon">
+                        <i class="text-icon fa-brands fa-node-js fa-lg"></i>Node
+                        Js
+                      </label>
+                    </span>
+                  </div>
+                  <div class="check-box-programer">
+                    <input type="checkbox" id="check-javascript" />
+                    <label>
+                      <i class="text-icon fa-brands fa-js fa-lg"></i>Javascript
+                    </label>
+                  </div>
+                </div>
+                <div class="coloum-check-box">
+                  <div class="check-box-programer">
+                    <input type="checkbox" id="check-reactjs" />
+                    <label>
+                      <i class="text-icon fa-brands fa-react fa-lg"></i>React Js
+                    </label>
+                  </div>
+                  <div class="check-box-programer">
+                    <input type="checkbox" id="check-vuejs" />
+                    <label>
+                      <i class="text-icon fa-brands fa-vuejs fa-lg"></i> Vue Js
+                    </label>
+                  </div>
+                </div>
+                <!-- icon check box end -->
+              </div>
+            </div>
+            <!-- form technologies end -->
+
+            <!-- upload image -->
+            <div>
+              <label for="">Upload Image</label>
+              <div class="input-blog-image-group">
+                <label class="image-group" for="input-blog-image">
+                  <p>Attach File</p>
+                  <img src="image/cliping.png" alt="" />
+                </label>
+                <input
+                  type="file"
+                  id="input-blog-image"
+                  hidden
+                  class="label-input-input"
+                />
+              </div>
+            </div>
+            <!-- upload image end -->
+
+            <!-- submit blog -->
+            <div class="submit-blog">
+              <button class="submit-blog-style">Submit</button>
+            </div>
+            <!-- submit blog end -->
+          </form>
+        </div>
+        <!-- <hr class="line"> -->
+      </div>
+    </section>
+    <!-- My Project end -->
+
+    <!-- ===================================================================================================================================================================================================================== -->
+    <!-- prject card add -->
+    <section style="background-color: bisque">
+      <div>
+        <h2 class="name-project-card">My Project</h2>
+        <div class="form-project-card-add" id="form-project-card-add">
+          <!-- card 1 -->
+          <div class="form-project-card">
+            <div class="form-project-image">
+              <img id="image-add" class="image-add" src="image/a.gif" />
+            </div>
+            <div class="title-add-project">
+              <h3>
+                <a href="blog-detail.html">ZUMA Human </a>
+              </h3>
+            </div>
+            <div class="duration-project">
+              <p>29 September 2023 01:30 WIB | Mei Kristian Laoli</p>
+              <p>Duration : 3 Months</p>
+            </div>
+            <div class="description-project">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                impedit cupiditate. Possimus rerum, molestiae officia modi
+                sapiente adipisci recusandae eius deleniti dolores provident
+                qui, eaque excepturi facilis voluptates eum dolorum minus vitae
+                quaerat consequuntur doloribus nostrum? Consequuntur, iure. Quia
+                hic cumque magnam doloribus ipsam maxime delectus ullam culpa.
+                Ipsam labore perspiciatis corporis? Exercitationem velit in eius
+                numquam eaque! Esse, possimus!
+              </p>
+            </div>
+            <div class="technologies-project">
+              <div class="technologies-project-card">
+                <i class="fa-brands fa-node-js fa-xl"></i>
+                <i class="fa-brands fa-js fa-xl"></i>
+                <i class="fa-brands fa-react fa-xl"></i>
+                <i class="fa-brands fa-vuejs fa-xl"></i>
+              </div>
+            </div>
+            <div class="button-add-project">
+              <button type="button" class="edit-button">Edit</button>
+              <button type="button" class="delete-button">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/myproject.js"></script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>

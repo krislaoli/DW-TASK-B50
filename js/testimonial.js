@@ -121,7 +121,6 @@ function alltestimonials() {
         <p class="author">${item.rating} <i class="fa-solid fa-star"></i></p>
     </div>`;
   });
-
   document.getElementById("testimonials").innerHTML = testimonialHtml;
 }
 
@@ -145,7 +144,7 @@ function filtertestimonials(rating) {
                 />
             <p class="quote">${item.quote}</p>
             <p class="author">${item.author}</p>
-            <p class="author">${item.rating} <i class="fa-solid fa-starfa-starfa-star"></i></p>
+            <p class="author">${item.rating} <i class="fa-solid fa-star"></i></p>
         </div>`;
     });
   }

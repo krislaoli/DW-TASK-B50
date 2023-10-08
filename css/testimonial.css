@@ -70,6 +70,8 @@ h2 {
 .start-name {
     font-family: 'Nova Slim', cursive;
     font-weight: bold;
+    background-color: #FFD700 !important;
+    border: 3px solid black !important;
 }
 
 .star-number {
@@ -99,7 +101,7 @@ h2 {
     margin-bottom: 20px;
     text-align: justify;
     font-family: 'Edu VIC WA NT Beginner', cursive;
-}
+    }
 
 .author {
     font-weight: bold;

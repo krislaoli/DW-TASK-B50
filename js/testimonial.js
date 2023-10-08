@@ -42,15 +42,15 @@ let testimonialsData = [
     rating: 5,
   },
   {
-    author: "Conan",
-    quote: "YEs",
+    author: "Titik Koma",
+    quote: "Selalu error ni",
     image:
       "https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fGNvZGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
     rating: 7,
   },
   {
-    author: "Conan",
-    quote: "YEs",
+    author: "Cafe coding",
+    quote: "Pura Ngoding",
     image:
       "https://plus.unsplash.com/premium_photo-1664301973841-fe2da7427d6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fGNvZGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
     rating: 9,
@@ -63,43 +63,43 @@ let testimonialsData = [
     rating: 9,
   },
   {
-    author: "Astronout",
-    quote: "You Crazy man",
+    author: "AuoUoooo",
+    quote: "WOSHHHH",
     image:
       "https://images.unsplash.com/photo-1614726365930-627c75da663e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGFzdHJvbmF1dHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
     rating: 10,
   },
   {
-    author: "Astronout",
-    quote: "You Crazy man",
+    author: "Dog nuck",
+    quote: "Tampan dan pemberani",
     image:
       "https://images.unsplash.com/photo-1682642566142-f89364f2ef61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
     rating: 10,
   },
   {
-    author: "Astronout",
-    quote: "You Crazy man",
+    author: "Cukurukuk",
+    quote: "Masa depan",
     image:
       "https://images.unsplash.com/photo-1696190439392-35e3f71ff8a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM1fEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
     rating: 4,
   },
   {
-    author: "Astronout",
-    quote: "You Crazy man",
+    author: "Women are never wrong",
+    quote: "You have to be strong",
     image:
       "https://images.unsplash.com/photo-1591035897819-f4bdf739f446?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdvbWVufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
     rating: 6,
   },
   {
-    author: "Astronout",
-    quote: "You Crazy man",
+    author: "Flower",
+    quote: "Flowers are a form of loyalty",
     image:
       "https://images.unsplash.com/photo-1584370848014-36cbe63b4458?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHdvbWVufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
     rating: 5,
   },
   {
-    author: "Astronout",
-    quote: "You Crazy man",
+    author: "wolf",
+    quote: "The wolf is angry",
     image:
       "https://plus.unsplash.com/premium_photo-1695447173374-8fca4357c159?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDYyfEpwZzZLaWRsLUhrfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
     rating: 3,

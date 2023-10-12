@@ -1,0 +1,22 @@
+
+/Day 8
+
+asynchronous concept
+Pada Asynchronous memiliki keterikatan tentang Blocking vs Non-Blocking, Concurrenty and Parallelism, Callback Functions, Promises, Async/Await, AJAX (Implement)
+
+
+Promise (Janji)
+
+- Object yang mempresentasikan keberhasilan / kegagalan sebuah event yang asynchronous yang akan terjadi pada datang
+- Promise/Janji, terpenuhi dan tidak terpenuhi.
+- Janji pada promise disebut state.
+- State, memiliki beberapa kondisi fulfilled, rejected, pending.
+- Callback, memiliki beberapa kondisi, resolve, reject, finally.
+- Aksi, Then / Catch.
+- Implement,  new Promise()
+
+res adalah result
+
+--> single thread tugas berurutan dan menyelesaikan tugas tugas tersebut misalnya orang A mempunyai 5 tugas dan dia menyelesaikan dari tugas 1, 2, 3, 4, 5. menyelesaikan dengan berurutan, bedanya javasicript adanya di single thread
+
+--> multi thread mempunyai beberapa orang misalnya orang A, B, C mereka mempunya masing-masing tugas dan mereka menyelesaikan tugas mereka masing

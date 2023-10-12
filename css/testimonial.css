@@ -85,6 +85,11 @@ h2 {
 
 }
 
+.scroll-name {
+    text-overflow: ellipsis;
+    letter-spacing: 2px;
+}
+
 .star-number {
     background-color: yellow;
     color: black;

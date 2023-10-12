@@ -93,7 +93,7 @@ function renderBlog() {
                     }"/>
                 </div>
                 <div class="title-add-project">
-                    <h3  style="overflow: auto; letter-spacing: 1px;" class="scroll-name"
+                    <h3 style="overflow: auto; letter-spacing: 1px;" class="scroll-name"
                     "><a  href="blog-detail.html">${
                       dataBlog[index].title
                     }</a></h3>

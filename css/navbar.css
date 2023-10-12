@@ -67,12 +67,14 @@ body {
 
 /* teks home - blog */
 .link-nav {
-    color: black;
+    color: yellow;
+    text-shadow: 2px 2px 3px black;
     text-decoration: none;
 }
 
 .link-nav:hover {
-    color: yellow;
+    color: orangered;
+    text-shadow: 2px 2px 3px black;
 }
 
 .link-nav:active {

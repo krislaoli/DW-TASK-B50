@@ -7,31 +7,23 @@ const port = 5000;
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "src/views"));
 
-// routing
-app.get("/blog-detail", blogDetail);
-app.get("/blog", blog);
-app.get("/contact", contact);
-app.get("/", home);
-app.get("/testimonial", testimonial);
-
 // set static file server
 app.use(express.static('src/assets'))
+
+// parcing data from client
+app.use(express.urlencoded({extended: false}))
+
+// routing
+app.get("/", home);
+app.get("/testimonial", testimonial);
+app.get("/contact", contact);
+app.get("/blog-detail", blogDetail);
+app.get("/blog", formblog);
+app.post("/blog", blog);
 
 app.listen(port, () => {
   console.log("app");
 });
-
-function blogDetail(req, res) {
-  res.render("blog-detail");
-}
-
-function blog(req, res) {
-  res.render("blog");
-}
-
-function contact(req, res) {
-  res.render("contact");
-}
 
 function home(req, res) {
   res.render("index");
@@ -41,8 +33,26 @@ function testimonial(req, res) {
   res.render("testimonial");
 }
 
+function contact(req, res) {
+  res.render("contact");
+}
 
+function blogDetail(req, res) {
+    const { id } = req.params
 
+    const data = {
+        id,
+        title : "Dumbways Web App",
+        content: "Hantu adalah roh dari orang atau hewan yang telah mati yang menampakkan wujudnya dalam kehidupan. Definisi dari hantu pada umumnya berbeda untuk setiap agama, peradaban, maupun adat istiadat. Dalam banyak kebudayaan, hantu tidak didefinisikan sebagai zat yang baik maupun jahat."
+    }
+  res.render("blog-detail",  { data });
+}
 
+function formblog(req, res) {
+  res.render("blog");
+}
 
-
+function blog(req, res) {
+  const data = req.body
+  console.log(data);
+}

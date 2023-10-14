@@ -1,4 +1,7 @@
-# Dw-B50-Stage1
-Link Web Day 6 : https://project-git-day-6-krislaoli.vercel.app/
+# Day 6
 
-Membuat responsive website menggunakan media query
+Task : Responsive Layout
+
+Link redeploy vercell Task : https://project-git-day-6-krislaoli.vercel.app/
+
+

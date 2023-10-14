@@ -1,2 +1,5 @@
-# Dw-B50-Stage1
-Link Web Day 8 : https://project-git-day-8-krislaoli.vercel.app/
+# Day 8
+
+Task :  HOF & Callback and Async, Promises, and Ajax
+
+Link redeploy vercell Task : https://project-git-day-8-krislaoli.vercel.app/

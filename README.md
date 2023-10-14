@@ -1,2 +1,5 @@
-# Dw-B50-Stage1
-Link Web Day 9 : https://project-git-day-9-krislaoli.vercel.app/
+# Day 9
+
+Task : Node JS Introduce & Creating Form Blog
+
+Link redeploy vercell Task : https://project-git-day-9-krislaoli.vercel.app/

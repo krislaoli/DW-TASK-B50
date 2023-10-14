@@ -1,2 +1,5 @@
-# Dw-B50-Stage1
-Link Web Day 5 : https://project-git-day-5-krislaoli.vercel.app/
+# Day 5
+
+Task : Count Post Blog Time
+
+Link redeploy vercell Task: https://project-git-day-5-krislaoli.vercel.app/

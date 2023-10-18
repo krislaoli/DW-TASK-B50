@@ -14,8 +14,14 @@
     <style>
       @import
       url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
-      .checkbox-custom { width: 20px; height: 20px; } .button-submit { color:
-      black; font-weight: bold; }
+      .checkbox-custom { width: 20px; height: 20px;} .button-submit { color:
+      black; font-weight: bold; color:;}
+      .form-check-label {
+        color: bisque;
+      }
+      .form-label {
+        color: bisque;
+      }
     </style>
     <link rel="stylesheet" href="/css/navbar.css" />
   </head>
@@ -75,11 +81,11 @@
     <!-- form content -->
     <section
       class="container my-4 p-4 p-sm-5 rounded-2"
-      style="max-width: 600px; background-color: #BCA37F;"
+      style="max-width: 600px; background-image: url(https://i.pinimg.com/originals/da/a1/19/daa119e2b37fd0af371641edf109da79.jpg);"
     >
       <h1
         class="text-center mb-4"
-        style="font-family: Kelly Slab; letter-spacing: 2px; text-shadow: 0px 0px 5px rgb(0, 0, 0); color: black;"
+        style="font-family: Kelly Slab; letter-spacing: 2px; text-shadow: 0px 0px 2px rgb(255, 255, 255); color: rgb(255, 255, 255);"
       >
         Add My Project
       </h1>
@@ -114,7 +120,8 @@
               class="form-control"
               id="startDate"
               name="startDate"
-              placeholder="Start Date"
+              value="{{project.startDate}}"
+              {{!-- placeholder="Start Date" --}}
             />
           </div>
           <div class="w-100">
@@ -124,7 +131,8 @@
               class="form-control"
               id="endDate"
               name="endDate"
-              placeholder="End Date"
+              value="{{project.endDate}}"
+              {{!-- placeholder="End Date" --}}
             />
           </div>
         </div>
@@ -139,7 +147,7 @@
           ></textarea>
         </div>
         <div class="mb-3">
-          <label class="label mb-1" for="technologies">Technologies</label>
+          <label class="label mb-1" for="technologies" style="color: bisque;">Technologies</label>
           <div class="row">
             <div class="col-12 col-sm-3 mb-1 mb-sm-0">
               <div class="form-check d-flex align-items-center gap-2 fw-bold">

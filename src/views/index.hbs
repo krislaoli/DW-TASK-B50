@@ -20,10 +20,21 @@
     />
 
     {{! font family }}
-    <style>@import
-      url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');</style>
+    <style>
+      @import
+      url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+      @import
+      url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+      .author-name strong{ font-weight: bold; } .button-edit-delete { width:
+      10rem !important; height: 2rem !important; border: 2px solid black;
+      border-radius: 10px !important; font-size: 20px !important; display: flex
+      !important; justify-content: center !important; align-items: center
+      !important; text-align: center !important; }
+
+    </style>
+
     {{! font family end }}
-    
+
     <link rel="stylesheet" href="/css/navbar.css" />
     <link rel="stylesheet" href="/css/index.css" />
   </head>
@@ -169,7 +180,7 @@
       <div
         class="flex-wrap card-content gap-4 p-5 d-flex align-items-center justify-content-center"
       >
-        {{#each views}}
+        {{#each dataBlog}}
           <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
             <div class="card card-my-project">
               <div class="card-body rounded-3 shadow">
@@ -183,15 +194,18 @@
                   class="fw-bolder fs-5"
                 >{{this.title}}</a>
                 <div class="duration-project">
-                  <p>Author : {{this.author}}</p>
-                  <p>Duration : {{this.postedAt}}</p>
+                  <p
+                    class="author-name"
+                    style="font-family: 'PT Sans', sans-serif;"
+                  ><strong>Author :</strong> {{this.author}} | {{this.duration}}</p>
+                  <p><strong>Duration :</strong> {{this.postedAt}}</p>
                 </div>
                 <p class="scrolltable" style="overflow: auto">
                   {{this.content}}
                 </p>
                 {{!-- {{#each this.technologies}} --}}
-                <div class="d-flex gap-3 mb-3">
-                  {{#if this.nodeJs}}
+                <div class="d-flex gap-3 mb-3" style="font-size: 1.6rem;">
+                  {{#if this.nodejs}}
                     <i class="fab fa-node-js"></i>
                   {{/if}}
                   {{#if this.js}}
@@ -209,15 +223,15 @@
                   class="btn-group gap-3 d-flex flex-row justify-content-center p-2"
                 >
                   <a
-                    href="#"
-                    class="btn fw-bold"
-                    style="width: 10rem; border: 2px solid black; border-radius: 10px; background-color: yellow; font-size: 20px;"
-                  >Edit</a>
+                    href="/edit-blog/{{@index}}"
+                    class="btn fw-bold button-edit-delete"
+                    style="background-color: yellow; font-size: 20px;"
+                  ><i class="fas fa-edit" style="margin-left: 5px;"></i></a>
                   <a
                     href="/delete-blog/{{@index}}"
-                    class="btn fw-bold"
-                    style="width: 10rem; border: 2px solid black; border-radius: 10px; background-color: red; font-size: 20px;"
-                  >Delete</a>
+                    class="btn fw-bold button-edit-delete"
+                    style="background-color: red; font-size: 20px; color:white;"
+                  ><i class="fas fa-trash" style="margin-left: 5px;"></i></a>
                 </div>
               </div>
             </div>

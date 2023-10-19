@@ -8,7 +8,9 @@ const { get } = require("http");
 const dateDuration = require("./src/helper/duration");
 
 const config = require("./src/config/config.json")
-console.log(config);
+const { Sequelize, QueryTypes } = require("sequelize");
+const sequelize = new Sequelize(config.development);
+// console.log(config.development);
 
 // setup call hbs with sub folder
 app.set("view engine", "hbs");

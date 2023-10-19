@@ -1,0 +1,59 @@
+instal package
+
+step by step untuk instal package sequelize
+//menginstal dua driver ke package.json 
+
+1. npm i sequelize pg pg-hstore 
+//menghasilkan 3 folder di package.json 
+-pg
+-pg-hstore
+-sequelize
+
+2. npm i --save sequelize-cli 
+//untuk menggkoneksikan vscode ke database posgresql dan menghasilkan 1 folder pada package.json setelah instal
+-sequelize-cli
+
+3. npx sequelize-cli init
+//menghasilkan 4 folder di package.json setelah instal
+- config, berisi file config, yang memberitahu CLI cara terhubung dengan database
+- models, berisi semua model untuk proyek Anda
+- migrasi, berisi semua file migrasi
+- seeder, berisi semua file benih
+
+//setelah di instal maka hasil config di ubah sesua nama pada isi database posgresql seperti dibawah
+"development": {
+    "username": "postgres",
+    "password": "11112222",
+    "database": "B50 Stage1",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+
+  -migration berfungsi untuk mendeskripsikan model kita kedalam database
+  -seeder adalah dummy datanya
+
+4. npx sequelize-cli model:generate --name User --attributes name:string,email:string,password:string
+// untuk mengkoneksikan ke database user
+
+5. npx sequelize-cli model:generate --name Project --attributes title:string,content:string,author:string,start_date:date,end_date:date,image:string,nodejs:boolean,js:boolean,react:boolean,vuejs:boolean,postedAt:date      
+
+6. npx sequelize-cli db:migrate
+// set up untuk melakukan koneksi langsung ke database posgresql dan ketika npx sequelize-cli db:migrate sudah diinstal maka hasil pada Schemas-> Public -> Tables, dan refres Tables ketika bagian urutan no 5 sudah di instal di terminal maka muncul nama Projects
+
+7. npx sequelize-cli seed:generate --name demo-user
+// cara menambahkan data dalam kolom Projects ketika kita klik kanan dan pilih script -> select dan run pada atau klik f5. dan ketika menginstal bagian no 7 ini akan memposisikan folder pada seeder
+
+8. npx sequelize-cli seed:generate --name user 
+//mengganti nama dari demo-user jadi user. dan bagian demo-usernya dihapus pada seeder
+
+9. npx sequelize-cli db:seed:all
+// memigrassi kedalam posgresql dalam Tables Project sehingga hasil dari seeder "project.js" akan masuk datanya kedalam database posgresql
+
+10. SELECT * FROM "Projects" WHERE id = 3;
+
+11. UPDATE public."Projects"
+	SET image='image.png'
+	WHERE id = 1;
+
+12. cara inisialisasi/inport conection pada index.js yaitu 
+// const config = require('./src/config/config.json')

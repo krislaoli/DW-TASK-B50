@@ -3,4 +3,4 @@
 Task : Creating Card, VCS, and Deployment
 
 Link redeploy vercell Task
-https://project-git-day-1-krislaoli.vercel.app/
+https://dw-b50-stage1-git-day-1-krislaoli.vercel.app/

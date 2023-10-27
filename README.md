@@ -2,4 +2,5 @@
 
 Task : Creating Blog Page
 
-Link redeploy vercell Task : https://project-git-day-4-krislaoli.vercel.app/
+Link redeploy vercell Task 
+
